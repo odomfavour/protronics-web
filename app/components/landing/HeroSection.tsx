@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import { FaAngleRight } from 'react-icons/fa';
 
 const HeroSection = () => {
   return (
@@ -18,8 +19,8 @@ const HeroSection = () => {
               <button className="bg-proOrange  rounded px-[24px] py-[10px] font-semibold text-base text-white">
                 Get a quote
               </button>
-              <button className="border-proOrange border  rounded px-[24px] py-[10px] font-semibold text-base text-proOrange">
-                Learn More
+              <button className="border-proOrange border  rounded px-[24px] py-[10px] font-semibold text-base text-proOrange flex items-center gap-2">
+                Learn More <FaAngleRight />
               </button>
             </div>
           </div>
