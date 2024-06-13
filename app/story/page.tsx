@@ -1,6 +1,6 @@
 import React from 'react';
-import HeaderBar from '../components/common/HeaderBar';
 import Image from 'next/image';
+import HeaderBar from '@/components/common/HeaderBar';
 
 const page = () => {
   return (

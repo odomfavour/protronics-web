@@ -1,7 +1,7 @@
 'use client';
+import PcbAssemblyTab from '@/components/services/PcbAssemblyTab';
+import PcbTab from '@/components/services/PcbTab';
 import { useState } from 'react';
-import PcbTab from '../components/services/PcbTab';
-import PcbAssemblyTab from '../components/services/PcbAssemblyTab';
 
 const ServicesPage = () => {
   const tabs = [

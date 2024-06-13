@@ -1,5 +1,5 @@
 import React from 'react';
-import HeaderBar from '../components/common/HeaderBar';
+import HeaderBar from '../../components/common/HeaderBar';
 import Image from 'next/image';
 
 const Page: React.FC = () => {
