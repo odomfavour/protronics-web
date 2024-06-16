@@ -6,26 +6,26 @@ const HeroSection = () => {
   return (
     <section className="mt-[100px]">
       <div className="w-11/12 mx-auto">
-        <div className="flex lg:flex-row flex-col items-center pt-[60px]">
+        <div className="flex lg:flex-row flex-col items-center lg:pt-[60px] pt-[30px]">
           <div className="lg:w-2/3 w-full">
-            <p className="text-[56px] font-bold">
+            <p className="lg:text-[56px] text-3xl font-bold">
               Experience Seamless PCB Solutions
             </p>
-            <p className="mt-[24px] text-[#1D2739] text-2xl">
+            <p className="lg:mt-[24px] mt-4 text-[#1D2739] lg:text-2xl text-lg">
               {' '}
               We offer precision craftsmanship everytime.
             </p>
-            <div className="flex items-center gap-[24px] mt-[20px]">
-              <button className="bg-proOrange  rounded px-[24px] py-[10px] font-semibold text-base text-white">
+            <div className="flex items-center lg:gap-[24px] gap-4 mt-[20px]">
+              <button className="bg-proOrange rounded lg:px-[24px] px-4 py-[10px] font-semibold text-base text-white">
                 Get a quote
               </button>
-              <button className="border-proOrange border  rounded px-[24px] py-[10px] font-semibold text-base text-proOrange flex items-center gap-2">
+              <button className="border-proOrange border rounded lg:px-[24px] px-4 py-[10px] font-semibold text-base text-proOrange flex items-center gap-2">
                 Learn More <FaAngleRight />
               </button>
             </div>
           </div>
-          <div className="lg:w-2/3 flex justify-end">
-            <div className="h-[398px] w-[428px] relative">
+          <div className="lg:w-2/3 w-full flex justify-end">
+            <div className="h-[398px] md:w-[428px] w-full relative">
               <Image
                 src="/images/hero-pic.svg"
                 className=" object-contain object-center rounded-2xl"

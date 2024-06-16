@@ -31,8 +31,8 @@ const Page: React.FC = () => {
           subtitle="There’s a story behind every wonderful adventure."
         />
 
-        <div className="flex items-center gap-10 py-10">
-          <div className="w-3/5">
+        <div className="flex md:flex-row flex-col-reverse items-center gap-10 py-10">
+          <div className="lg:w-3/5 w-full">
             <p className="text-lg font-normal text-[#101928] mb-5">
               At Protronics Inc., we firmly believe that our people are the
               cornerstone of our success. While our business model is strong, it
@@ -59,7 +59,7 @@ const Page: React.FC = () => {
               our customers’ needs.
             </p>
           </div>
-          <div className="w-2/5 flex justify-end">
+          <div className="lg:w-2/5 w-full flex justify-end">
             <div className="relative h-[450px] w-full">
               <Image
                 src="/images/story-pic.svg"
@@ -73,16 +73,20 @@ const Page: React.FC = () => {
         </div>
       </div>
       <div className="py-10 w-11/12 mx-auto">
-        <div className="grid grid-cols-2 gap-10">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
           {teamMembers.map((member, index) => (
             <div
               key={index}
               className="border border-[#FCB59A] p-6 rounded-[10px]"
             >
-              <p className="text-[24px] font-semibold">{member.name}</p>
-              <p className="text-lg font-medium">{member.title}</p>
+              <p className="lg:text-[24px] text-lg font-semibold">
+                {member.name}
+              </p>
+              <p className="lg:text-lg text-base font-medium">{member.title}</p>
               <div className="mt-5">
-                <p className="text-lg font-medium">{member.description}</p>
+                <p className="lg:text-lg text-base font-medium">
+                  {member.description}
+                </p>
               </div>
             </div>
           ))}

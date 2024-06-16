@@ -16,8 +16,12 @@ const HeaderBar: React.FC<HeaderBarProps> = ({
   return (
     <div>
       <div className="text-center py-10 border-black border-b">
-        <p className={`text-[56px] font-bold ${titleColor}`}>{title}</p>
-        <p className={`text-2xl font-normal ${subtitleColor}`}>{subtitle}</p>
+        <p className={`lg:text-[56px] text-3xl font-bold ${titleColor}`}>
+          {title}
+        </p>
+        <p className={`lg:text-2xl  text-lg font-normal ${subtitleColor}`}>
+          {subtitle}
+        </p>
       </div>
     </div>
   );

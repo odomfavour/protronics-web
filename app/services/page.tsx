@@ -22,7 +22,7 @@ const ServicesPage = () => {
         </div>
 
         <div className="mt-10">
-          <div className="flex gap-6 my-5">
+          <div className="flex flex-wrap gap-6 my-5">
             {tabs.map((tab) => (
               <button
                 className={`py-2 px-5 border rounded-[10px] font-semibold ${

@@ -27,8 +27,8 @@ const WhySection = () => {
   return (
     <section className="py-10">
       <div className="mx-auto w-11/12">
-        <div className="bg-blue-100 p-[60px] rounded-[10px]">
-          <p className="text-center text-[48px] text-proDark font-semibold ">
+        <div className="bg-blue-100 lg:p-[60px] p-5 rounded-[10px]">
+          <p className="text-center lg:text-[48px] text-3xl  text-proDark font-semibold ">
             Why Choose Protronics as your PCBA Partner?
           </p>
           <p className="text-center text-[#514A4A] mb-[40px] font-normal text-lg">
@@ -40,7 +40,7 @@ const WhySection = () => {
 
           <div className="flex lg:flex-row flex-col gap-[40px] items-center">
             <div className="lg:w-3/5 w-full">
-              <div className="h-[450px] relative">
+              <div className="lg:h-[450px] h-[200px] w-full relative">
                 <Image
                   src="/images/why-pic.svg"
                   className=" object-contain object-center rounded-2xl"

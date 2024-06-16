@@ -36,10 +36,10 @@ const ServicesSection = () => {
   return (
     <section className="py-10">
       <div className="mx-auto w-11/12">
-        <p className="text-center text-[48px] text-proDark font-semibold ">
+        <p className="text-center lg:text-[48px] text-3xl text-proDark font-semibold ">
           Our Services
         </p>
-        <p className="text-center text-[#514A4A] mb-[40px] font-normal text-lg">
+        <p className="text-center text-[#514A4A] mb-[40px] font-normal lg:text-lg text-sm">
           Discover our expertise in PCB assembly.
         </p>
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-[30px]">
@@ -75,7 +75,7 @@ const ServicesSection = () => {
                     {desc}
                   </p>
                   <div className="flex items-center gap-[24px] mt-[10px]">
-                    <button className="border-proOrange border  rounded px-[24px] py-[10px] font-semibold text-base text-proOrange flex items-center gap-2">
+                    <button className="border-proOrange border  rounded lg:px-[24px] px-4 py-[10px] font-semibold text-base text-proOrange flex items-center gap-2">
                       Learn More <FaAngleRight />
                     </button>
                   </div>

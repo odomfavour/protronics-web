@@ -46,13 +46,15 @@ const PcbTab = () => {
 
   return (
     <section>
-      <div className="grid grid-cols-2 gap-5 my-10">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-5 my-10">
         {sections.map((section, index) => (
           <div key={index} className="border p-8 rounded-[10px] shadow-md">
-            <p className="text-[32px] font-semibold mb-6">{section.title}</p>
+            <p className="lg:text-[32px] text-lg font-semibold lg:mb-6 mb-3">
+              {section.title}
+            </p>
             <ul>
               {section.items.map((item, itemIndex) => (
-                <li key={itemIndex} className="list-disc">
+                <li key={itemIndex} className="list-disc text-base">
                   {item}
                 </li>
               ))}
