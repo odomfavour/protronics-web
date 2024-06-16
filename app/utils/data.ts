@@ -32,6 +32,7 @@ export const navLinks = [
     ],
   },
   { id: 5, name: 'Blog', url: '/blog' },
+  { id: 5, name: 'Contact Us', url: '/contact' },
 ];
 
 export const companyLinks = [

@@ -22,8 +22,8 @@ const Page: React.FC = () => {
               repair lab.
             </p>
             <p className="lg:text-lg text-base font-normal text-[#101928] mb-5">
-              ProTronics came about when Jan sought Ed's advice about starting a
-              Contract Manufacturing business. Apparently on the same
+              ProTronics came about when Jan sought Ed&apos;s advice about
+              starting a Contract Manufacturing business. Apparently on the same
               wave-length already, Ed pulled out a ready-to-go business plan for
               what would soon become ProTronics. After many years together, Ed
               retired and the company is now owned and operated by Jan Alford.
@@ -31,9 +31,9 @@ const Page: React.FC = () => {
             <p className="lg:text-lg text-base font-normal text-[#101928] mb-5">
               Over our 20 year history, ProTronics is proud to say that we have
               strived to treat our employees as family. We have become more than
-              just a job shop for our customers… we've become an integral part
-              and extension of their businesses! We serve clients nationwide and
-              internationally..
+              just a job shop for our customers… we&apos;ve become an integral
+              part and extension of their businesses! We serve clients
+              nationwide and internationally..
             </p>
           </div>
           <div className="lg:w-2/5 w-full flex justify-end">
