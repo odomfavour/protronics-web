@@ -30,7 +30,9 @@ const page = () => {
           <div className="w-1/2">
             <div className="bg-gray-100 p-10">
               <p>Ready to get started? </p>
-              <p>Contact us!</p>
+              <p className="font-normal text-[36px] mb-5 text-[#101928]">
+                Contact us!
+              </p>
               <form action="">
                 <div className="grid gap-6 mb-6 md:grid-cols-2">
                   <div>
