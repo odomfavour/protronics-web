@@ -25,6 +25,7 @@ const ServicesPage = () => {
           <div className="flex flex-wrap gap-6 my-5">
             {tabs.map((tab) => (
               <button
+                key={tab.id}
                 className={`py-2 px-5 border rounded-[10px] font-semibold ${
                   activeTab == tab.label
                     ? 'bg-[#1671D9] border-[#1671D9] text-white'
