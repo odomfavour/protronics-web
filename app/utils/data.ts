@@ -1,8 +1,36 @@
 export const navLinks = [
   { id: 1, name: 'Home', url: '/' },
-  { id: 2, name: 'Our Services', url: '/' },
-  { id: 3, name: 'Company', url: '/' },
-  { id: 4, name: 'Resources', url: '/resources' },
+  {
+    id: 2,
+    name: 'Our Services',
+    url: '/services',
+    children: [
+      { id: 'pcb', name: 'PCB Assembly', url: '/services' },
+      { id: 'testing', name: 'Testing', url: '/services' },
+      { id: 'ic-packaging', name: 'IC Packaging', url: '/services' },
+    ],
+  },
+  {
+    id: 3,
+    name: 'Company',
+    url: '#',
+    children: [
+      { id: 'about-us', name: 'About Us', url: '/story' },
+      { id: 'leadership', name: 'Leadership', url: '/leadership' },
+      { id: 'equipment', name: 'Equipment', url: '/equipment' },
+    ],
+  },
+  {
+    id: 4,
+    name: 'Resources',
+    url: '/resources',
+    children: [
+      { id: 'industries', name: 'Industries', url: '/industries' },
+      { id: 'applications', name: 'Applications', url: '/applications' },
+      { id: 'quality-systems', name: 'Quality Systems', url: '#' },
+      { id: 'supply-chain', name: 'Supply Chain', url: '#' },
+    ],
+  },
   { id: 5, name: 'Blog', url: '/blog' },
 ];
 

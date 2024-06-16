@@ -42,7 +42,7 @@ const ServicesSection = () => {
         <p className="text-center text-[#514A4A] mb-[40px] font-normal text-lg">
           Discover our expertise in PCB assembly.
         </p>
-        <div className="grid grid-cols-4 gap-[30px]">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-[30px]">
           {services.map((service) => {
             const { id, img, title, desc } = service;
             return (

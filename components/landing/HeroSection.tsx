@@ -6,8 +6,8 @@ const HeroSection = () => {
   return (
     <section className="mt-[100px]">
       <div className="w-11/12 mx-auto">
-        <div className="flex items-center pt-[60px]">
-          <div className="w-2/3">
+        <div className="flex lg:flex-row flex-col items-center pt-[60px]">
+          <div className="lg:w-2/3 w-full">
             <p className="text-[56px] font-bold">
               Experience Seamless PCB Solutions
             </p>
@@ -24,7 +24,7 @@ const HeroSection = () => {
               </button>
             </div>
           </div>
-          <div className="w-2/3 flex justify-end">
+          <div className="lg:w-2/3 flex justify-end">
             <div className="h-[398px] w-[428px] relative">
               <Image
                 src="/images/hero-pic.svg"

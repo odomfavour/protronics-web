@@ -9,9 +9,9 @@ const Footer = () => {
   return (
     <footer className="bg-proDark py-10">
       <div className="w-11/12 mx-auto">
-        <div className="flex">
-          <div className="w-2/5">
-            <div className="w-3/5">
+        <div className="flex gap-6 md:flex-row flex-col">
+          <div className="lg:w-2/5 w-full">
+            <div className="lg:w-3/5 w-full">
               <div className="relative h-[26px] w-[145px]">
                 <Image
                   src="/images/dark-logo.svg"
@@ -57,7 +57,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="w-1/5">
+          <div className="lg:w-1/5 w-full">
             <p className="text-[#667185] text-base mb-6 font-medium">Company</p>
             <ul>
               {companyLinks.map((companyLink) => (
@@ -72,7 +72,7 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          <div className="w-1/5">
+          <div className="lg:w-1/5 w-full">
             <p className="text-[#667185] text-base mb-6 font-medium">
               Protronics Products
             </p>
@@ -89,7 +89,7 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          <div className="w-1/5">
+          <div className="lg:w-1/5 w-full">
             <p className="text-[#667185] text-base mb-6 font-medium">
               Industry Solutions
             </p>

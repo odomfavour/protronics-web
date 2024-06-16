@@ -38,8 +38,8 @@ const WhySection = () => {
             the brain.
           </p>
 
-          <div className="flex gap-[40px] items-center">
-            <div className="w-3/5">
+          <div className="flex lg:flex-row flex-col gap-[40px] items-center">
+            <div className="lg:w-3/5 w-full">
               <div className="h-[450px] relative">
                 <Image
                   src="/images/why-pic.svg"
@@ -50,7 +50,7 @@ const WhySection = () => {
                 />
               </div>
             </div>
-            <div className="w-2/5">
+            <div className="lg:w-2/5 w-full">
               {qualities.map((quality) => (
                 <div className="flex gap-3 mb-7" key={quality.id}>
                   <div className="h-[40px] w-[40px] relative">

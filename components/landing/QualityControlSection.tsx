@@ -15,7 +15,7 @@ const QualityControlSection = () => {
           components for correct markings and acceptable solder joints.
         </p>
         <div className="mt-6">
-          <div className="grid grid-cols-2 gap-[32px]">
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-[32px]">
             <div>
               <div>
                 <div>

@@ -37,7 +37,7 @@ const QualityGrid = () => {
   return (
     <div className="py-10">
       <div className="w-2/3 mx-auto">
-        <div className="grid grid-cols-2 gap-x-8 gap-y-6">
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-x-8 gap-y-6">
           {pcbs.map((pcb) => {
             return (
               <div
