@@ -42,16 +42,28 @@ const TestimonialSection = () => {
   return (
     <section className="py-[80px]">
       <div className="mx-auto w-11/12">
-        <p className="text-center lg:text-[48px] text-3xl text-proDark font-semibold">
-          Here’s what our clients think about us
+        <p className="text-center lg:text-[48px] text-3xl text-proDark font-semibold mb-6">
+          Here&apos;s what our clients think about us
         </p>
         <div className="mt-8">
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
             spaceBetween={30}
-            slidesPerView={1}
             autoplay
             loop={true}
+            breakpoints={{
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              1024: {
+                slidesPerView: 2,
+              },
+            }}
           >
             {testimonials.map((testimonial, index) => (
               <SwiperSlide key={index}>

@@ -5,7 +5,7 @@ const QualityControlSection = () => {
   return (
     <section className="py-10 bg-[#F7F9FC]">
       <div className="mx-auto w-11/12">
-        <p className="text-center lg:text-[48px] text-3xl text-proDark font-semibold ">
+        <p className="text-center lg:text-[48px] text-3xl text-proDark font-semibold mb-6">
           Our Quality Control Process
         </p>
         <p className="text-center text-[#514A4A] mb-[40px] font-normal lg:text-lg text-sm">

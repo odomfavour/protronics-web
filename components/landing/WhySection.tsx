@@ -28,7 +28,7 @@ const WhySection = () => {
     <section className="py-10">
       <div className="mx-auto w-11/12">
         <div className="bg-blue-100 lg:p-[60px] p-5 rounded-[10px]">
-          <p className="text-center lg:text-[48px] text-3xl  text-proDark font-semibold ">
+          <p className="text-center lg:text-[48px] text-3xl  text-proDark font-semibold mb-6">
             Why Choose Protronics as your PCBA Partner?
           </p>
           <p className="text-center text-[#514A4A] mb-[40px] font-normal text-lg">

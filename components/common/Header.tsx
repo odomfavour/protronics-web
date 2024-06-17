@@ -68,7 +68,7 @@ const Header = () => {
   return (
     <>
       {!isMobileMenuOpen && (
-        <nav className="w-full top-0 z-30 left-0 fixed bg-white flex justify-center shadow-lg shadow-[rgba(0,0,0,0.025)]">
+        <nav className="w-full max-w-[1440px] top-0 z-30 left-1/2 transform -translate-x-1/2 fixed bg-white flex justify-center shadow-lg shadow-[rgba(0,0,0,0.025)]">
           <div className="w-11/12 mx-auto">
             <div className="flex justify-between items-center py-5">
               <Link href="/">
@@ -79,7 +79,7 @@ const Header = () => {
                   alt="logo"
                 />
               </Link>
-              <ul className="md:flex items-center gap-12 hidden">
+              <ul className="lg:flex items-center gap-12 hidden">
                 {navLinks.map((itemLink: any, index: number) => (
                   <li
                     key={itemLink.id}
@@ -140,7 +140,7 @@ const Header = () => {
                   </li>
                 ))}
               </ul>
-              <div className="md:flex items-center gap-4 hidden">
+              <div className="lg:flex items-center gap-4 hidden">
                 <Link href="/" className="text-proOrange">
                   Login
                 </Link>
@@ -149,7 +149,7 @@ const Header = () => {
                 </button>
               </div>
               <div
-                className="hamburger cursor-pointer md:hidden block"
+                className="hamburger cursor-pointer lg:hidden block"
                 onClick={toggleMobileMenu}
               >
                 <GiHamburgerMenu

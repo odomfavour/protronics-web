@@ -3,13 +3,15 @@ import { FaEnvelope } from 'react-icons/fa';
 
 const page = () => {
   return (
-    <section>
+    <section className="pt-[100px]">
       <div className="w-11/12 mx-auto">
-        <div className="flex md:flex-row flex-col pt-[100px] gap-10">
-          <div className="w-1/2 flex items-center">
+        <div className="flex md:flex-row flex-col py-10 gap-10">
+          <div className="lg:w-1/2 w-full flex items-center">
             <div>
-              <p>Contact Us</p>
-              <p>
+              <p className="font-bold text-[56px] text-black mb-6">
+                Contact Us
+              </p>
+              <p className="text-lg font-normal text-black mb-12">
                 The volume for PCB assembly at ProTronics depends more on the
                 design of the circuit board{' '}
               </p>
@@ -27,12 +29,14 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className="w-1/2">
-            <div className="bg-gray-100 p-10">
-              <p>Ready to get started? </p>
-              <p className="font-normal text-[36px] mb-5 text-[#101928]">
-                Contact us!
+          <div className="lg:w-1/2 w-full">
+            <div className="bg-gray-100 p-10 mb-10 rounded-[10px]">
+              <p className="font-normal text-[36px] mb-8 text-[#101928] leading-[43px]">
+                Ready to get started?<br></br> Contact us!
               </p>
+              {/* <p className="font-normal text-[36px] mb-5 text-[#101928] leading-[43px]">
+                Contact us!
+              </p> */}
               <form action="">
                 <div className="grid gap-6 mb-6 md:grid-cols-2">
                   <div>
@@ -46,7 +50,6 @@ const page = () => {
                       type="text"
                       id="first_name"
                       className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3"
-                      placeholder="John"
                       required
                     />
                   </div>
@@ -62,7 +65,6 @@ const page = () => {
                       type="text"
                       id="company"
                       className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3"
-                      placeholder="Flowbite"
                       required
                     />
                   </div>
@@ -77,7 +79,6 @@ const page = () => {
                       type="email"
                       id="email"
                       className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3"
-                      placeholder="Doe"
                       required
                     />
                   </div>
@@ -92,7 +93,6 @@ const page = () => {
                       type="tel"
                       id="phone"
                       className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3"
-                      placeholder="123-45-678"
                       pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
                       required
                     />
@@ -103,13 +103,12 @@ const page = () => {
                     htmlFor="email"
                     className="block mb-2 text-sm font-medium text-gray-900 "
                   >
-                    Email address
+                    Address
                   </label>
                   <input
-                    type="email"
-                    id="email"
+                    type="text"
+                    id="address"
                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3"
-                    placeholder="john.doe@company.com"
                     required
                   />
                 </div>
@@ -124,7 +123,6 @@ const page = () => {
                     id="message"
                     rows={4}
                     className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
-                    placeholder="Write your thoughts here..."
                   ></textarea>
                 </div>
                 <div>

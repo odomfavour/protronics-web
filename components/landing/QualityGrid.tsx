@@ -24,12 +24,12 @@ const QualityGrid = () => {
       img: '/images/pcb-logos/it.svg',
     },
     {
-      id: 1,
+      id: 5,
       name: 'Restriction of Hazardous Substance (RoHS)',
       img: '/images/pcb-logos/rohs.svg',
     },
     {
-      id: 1,
+      id: 6,
       name: 'ISO 9000 Preparation',
       img: '/images/pcb-logos/iso.svg',
     },
