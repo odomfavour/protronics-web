@@ -144,9 +144,12 @@ const Header = () => {
                 <Link href="/" className="text-proOrange">
                   Login
                 </Link>
-                <button className="bg-proOrange rounded px-[24px] py-[10px] font-semibold text-base text-white">
+                <Link
+                  href="/quote"
+                  className="bg-proOrange rounded px-[24px] py-[10px] font-semibold text-base text-white"
+                >
                   Get a quote
-                </button>
+                </Link>
               </div>
               <div
                 className="hamburger cursor-pointer lg:hidden block"

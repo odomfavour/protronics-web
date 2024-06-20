@@ -28,7 +28,7 @@ const Page: React.FC = () => {
       <div className="w-11/12 mx-auto">
         <HeaderBar
           title="Our Leadership"
-          subtitle="There’s a story behind every wonderful adventure."
+          subtitle="There's a story behind every wonderful adventure."
         />
 
         <div className="flex md:flex-row flex-col-reverse items-center gap-10 py-10">
