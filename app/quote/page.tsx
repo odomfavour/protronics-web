@@ -6,8 +6,8 @@ const page = () => {
   return (
     <section className="pt-[100px]">
       <div className="w-11/12 mx-auto">
-        <div className="flex md:flex-row flex-col py-10 gap-10">
-          <div className="lg:w-1/2 w-full flex items-center">
+        <div className="flex lg:flex-row flex-col py-10 gap-10">
+          <div className="lg:w-1/2 w-full flex lg:pt-[300px]">
             <div>
               <p className="font-bold text-[56px] text-black mb-6">
                 Get a Quote
@@ -31,7 +31,7 @@ const page = () => {
             </div>
           </div>
           <div className="lg:w-1/2 w-full">
-            <div className="bg-gray-100 p-10 mb-10 rounded-[10px]">
+            <div className="bg-gray-100 md:p-10 p-5 mb-10 rounded-[10px]">
               <QuoteForm />
             </div>
           </div>

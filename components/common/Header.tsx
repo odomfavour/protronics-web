@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { navLinks } from '@/app/utils/data';
 import { usePathname } from 'next/navigation';
-import { FaChevronDown, FaHamburger } from 'react-icons/fa';
+import { FaChevronDown } from 'react-icons/fa';
 import { FaX } from 'react-icons/fa6';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
@@ -14,6 +14,23 @@ const Header = () => {
   const [activeParent, setActiveParent] = useState<string | null>(null);
   const dropdownRefs = useRef<(HTMLLIElement | null)[]>([]);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobileView, setIsMobileView] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setIsMobileMenuOpen(false);
+      }
+      setIsMobileView(window.innerWidth <= 768);
+    };
+
+    handleResize(); // Check initial screen size
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     let parentSet = false;
@@ -164,7 +181,7 @@ const Header = () => {
           </div>
         </nav>
       )}
-      {isMobileMenuOpen && (
+      {isMobileMenuOpen && isMobileView && (
         <div className="fixed h-full z-40 top-0 left-0 w-2/3 bg-white p-3">
           <div>
             <div className=" flex justify-between items-center">
@@ -184,7 +201,6 @@ const Header = () => {
                 />
               </div>
             </div>
-
             <div className="mt-4">
               {navLinks.map((itemLink: any, index: number) => (
                 <li
@@ -246,6 +262,22 @@ const Header = () => {
                   )}
                 </li>
               ))}
+              <div className="mt-4 flex flex-col gap-4">
+                <Link
+                  href="/"
+                  className="text-proOrange"
+                  onClick={closeMobileMenu}
+                >
+                  Login
+                </Link>
+                <Link
+                  href="/quote"
+                  className="bg-proOrange rounded px-[24px] py-[10px] font-semibold text-base text-white"
+                  onClick={closeMobileMenu}
+                >
+                  Get a quote
+                </Link>
+              </div>
             </div>
           </div>
         </div>

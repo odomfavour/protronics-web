@@ -15,7 +15,7 @@ const ServicesPage = () => {
     <section className="pt-[100px]">
       <div className="w-11/12 mx-auto">
         <div className="text-center">
-          <p className="text-[56px] font-bold text-[#000000]">{activeTab}</p>
+          <p className="text-[56px] font-bold text-[#000000]">Testing</p>
           <p className="text-2xl font-normal">
             Discover our expertise in PCB Design.
           </p>

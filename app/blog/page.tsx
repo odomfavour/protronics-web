@@ -21,9 +21,9 @@ const page = () => {
           subtitle="There's a story behind every wonderful adventure."
         />
         <div className="my-20">
-          <div className="flex gap-6">
-            <div className="w-3/4">
-              <div className="grid grid-cols-3 gap-6">
+          <div className="flex lg:flex-row flex-col-reverse gap-6">
+            <div className="lg:w-3/4 w-full">
+              <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
                 {blogs.map((blog) => (
                   <Link href={`/blog/${blog.id}`} key={blog.id}>
                     <div>
@@ -55,7 +55,7 @@ const page = () => {
                 ))}
               </div>
             </div>
-            <div className="w-1/4">
+            <div className="lg:w-1/4 w-full">
               <div className="bg-[#FFECE5] rounded-[10px] p-[26px] mb-14">
                 <p className="text-base font-normal text-proDark text-center mb-4">
                   Get beyond blog delivered to your inbox every week.{' '}
