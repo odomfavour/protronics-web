@@ -66,7 +66,7 @@ const IndustriesPage = () => {
         <div className="w-11/12 mx-auto">
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
             {industries.map((industry) => (
-              <div>
+              <div key={industry.id}>
                 <div>
                   <div className="image-box h-[250px] relative z-10">
                     <Image

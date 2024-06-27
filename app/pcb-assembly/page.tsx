@@ -6,7 +6,7 @@ import React, { useState } from 'react';
 
 const Page = () => {
   return (
-    <section className="pt-[100px]">
+    <section className="pt-[150px]">
       <div className="w-11/12 mx-auto">
         <div className="text-center pt-6">
           <p className="lg:text-[56px] text-3xl font-bold text-[#000000] lg:w-1/2 w-full mx-auto leading-[56px] mb-5">

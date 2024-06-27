@@ -5,8 +5,9 @@ export const navLinks = [
     name: 'Our Services',
     url: '/services',
     children: [
-      { id: 'pcb', name: 'PCB Assembly', url: '/pcb-assembly' },
-      { id: 'testing', name: 'Testing', url: '/services' },
+      { id: 'pcb-design', name: 'PCB Design', url: '/pcb-design' },
+      { id: 'pcb-assembly', name: 'PCB Assembly', url: '/pcb-assembly' },
+      { id: 'testing', name: 'Testing', url: '/testing' },
       { id: 'ic-packaging', name: 'IC Packaging', url: '/ic-packaging' },
     ],
   },

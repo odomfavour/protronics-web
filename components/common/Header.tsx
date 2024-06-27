@@ -85,8 +85,8 @@ const Header = () => {
   return (
     <>
       {!isMobileMenuOpen && (
-        <nav className="w-full max-w-[1440px] top-0 z-30 left-1/2 transform -translate-x-1/2 fixed bg-white flex justify-center shadow-lg shadow-[rgba(0,0,0,0.025)]">
-          <div className="w-11/12 mx-auto">
+        <nav className="w-full top-0 z-30 left-1/2 transform -translate-x-1/2 fixed bg-white flex justify-center shadow-lg shadow-[rgba(0,0,0,0.025)]">
+          <div className="max-w-[1440px] w-11/12 mx-auto">
             <div className="flex justify-between items-center py-5">
               <Link href="/">
                 <Image

@@ -13,33 +13,23 @@ const PcbTab = () => {
       ],
     },
     {
-      title: 'Product Development',
+      title: 'Electrical Hardware Design',
       items: [
-        'New Product Introduction',
-        'Certification Management',
-        'BOM Analysis',
-        'Turnkey and Complete Box Builds',
-        'Design for Assembly (DFA)',
+        'Schematic Design',
+        'IC Component Selectiont',
+        'Printed Circuit Board Design, including: PCB Layout, PCB Testing',
+        'Design Validation Testing (DVT)',
+        'Engineering Validation Testing (EVT)',
       ],
     },
     {
-      title: 'Product Development',
+      title: 'Test Fixture Design',
       items: [
-        'New Product Introduction',
-        'Certification Management',
-        'BOM Analysis',
-        'Turnkey and Complete Box Builds',
-        'Design for Assembly (DFA)',
-      ],
-    },
-    {
-      title: 'Product Development',
-      items: [
-        'New Product Introduction',
-        'Certification Management',
-        'BOM Analysis',
-        'Turnkey and Complete Box Builds',
-        'Design for Assembly (DFA)',
+        'Develop and Design Test Fixture',
+        'In-Circuit Testing and Programming',
+        'Functional Testing',
+        'Fixture Validation',
+        'End-of-Line Fixture',
       ],
     },
   ];
@@ -48,7 +38,7 @@ const PcbTab = () => {
     <section>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-5 my-10">
         {sections.map((section, index) => (
-          <div key={index} className="border p-8 rounded-[10px] shadow-md">
+          <div key={index} className="border p-8 rounded-[10px] shadow-sm">
             <p className="lg:text-[32px] text-lg font-semibold lg:mb-6 mb-3">
               {section.title}
             </p>
