@@ -49,10 +49,10 @@ const IndustriesPage = () => {
       </div>
       <div className="mt-5 py-[100px] bg-[#EFF1F321]">
         <div className="w-11/12 mx-auto">
-          <div className="grid md:grid-cols-2 grid-cols-1 gap-6">
+          <div className="grid md:grid-cols-3 grid-cols-1 gap-6">
             {applications.map((application) => (
               <div
-                className="bg-white rounded-[10px] p-10"
+                className="bg-white rounded-[10px] p-10 shadow-md"
                 key={application.id}
               >
                 <div className="flex justify-center items-center h-[48px] w-[48px] bg-[#FFF4F0] rounded-full">

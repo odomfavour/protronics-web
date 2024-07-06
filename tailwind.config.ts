@@ -14,7 +14,7 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-        proOrange: '#EB5017',
+        proOrange: '#1671D9',
         proDark: '#101928',
       },
     },
