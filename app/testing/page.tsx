@@ -1,13 +1,13 @@
-'use client';
-import HeaderBar from '@/components/common/HeaderBar';
-import PcbAssemblyTab from '@/components/services/PcbAssemblyTab';
-import TestingTab from '@/components/services/TestingTab';
-import Image from 'next/image';
-import React, { useState } from 'react';
+"use client";
+import HeaderBar from "@/components/common/HeaderBar";
+import PcbAssemblyTab from "@/components/services/PcbAssemblyTab";
+import TestingTab from "@/components/services/TestingTab";
+import Image from "next/image";
+import React, { useState } from "react";
 
 const Page = () => {
   return (
-    <section className="pt-[150px]">
+    <section className="pt-[120px] lg:pt-[200px]">
       <div className="w-11/12 mx-auto">
         <div className="text-center pt-6">
           <p className="lg:text-[56px] text-3xl font-bold text-[#000000] lg:w-1/2 w-full mx-auto leading-[56px] mb-5">

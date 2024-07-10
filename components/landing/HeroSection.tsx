@@ -38,7 +38,7 @@ const HeroSection = () => {
     // Add more slides as needed
   ];
   return (
-    <section className="mt-[100px]">
+    <section className="mt-[200px]">
       <div className="w-11/12 mx-auto">
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}

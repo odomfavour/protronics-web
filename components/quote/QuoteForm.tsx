@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const QuoteForm = () => {
   return (
@@ -11,7 +11,7 @@ const QuoteForm = () => {
           >
             Please select the services you need
           </label>
-          <div className="flex">
+          <div className="flex flex-wrap gap-3">
             <div className="flex items-center me-4">
               <input
                 id="inline-checkbox"
@@ -21,7 +21,7 @@ const QuoteForm = () => {
               />
               <label
                 htmlFor="inline-checkbox"
-                className="ms-2 text-sm font-medium text-gray-900 "
+                className="ms-2 text-sm text-nowrap font-medium text-gray-900 "
               >
                 PCB Assembly
               </label>
@@ -35,7 +35,7 @@ const QuoteForm = () => {
               />
               <label
                 htmlFor="inline-2-checkbox"
-                className="ms-2 text-sm font-medium text-gray-900"
+                className="ms-2 text-sm font-medium text-nowrap text-gray-900"
               >
                 PCB Volume
               </label>
@@ -50,7 +50,7 @@ const QuoteForm = () => {
               />
               <label
                 htmlFor="inline-checked-checkbox"
-                className="ms-2 text-sm font-medium text-gray-900 "
+                className="ms-2 text-sm font-medium text-nowrap text-gray-900 "
               >
                 Rework & Repair
               </label>
@@ -64,7 +64,7 @@ const QuoteForm = () => {
           >
             What, if any materials, do you need PTI to include in the quote?
           </label>
-          <div className="flex">
+          <div className="flex flex-wrap gap-3">
             <div className="flex items-center me-4">
               <input
                 id="inline-checkbox"
@@ -74,7 +74,7 @@ const QuoteForm = () => {
               />
               <label
                 htmlFor="inline-checkbox"
-                className="ms-2 text-sm font-medium text-gray-900 "
+                className="ms-2 text-sm font-medium text-nowrap text-gray-900 "
               >
                 PCB’s
               </label>
@@ -88,7 +88,7 @@ const QuoteForm = () => {
               />
               <label
                 htmlFor="inline-2-checkbox"
-                className="ms-2 text-sm font-medium text-gray-900"
+                className="ms-2 text-sm font-medium text-nowrap text-gray-900"
               >
                 Components
               </label>
@@ -103,7 +103,7 @@ const QuoteForm = () => {
               />
               <label
                 htmlFor="inline-checked-checkbox"
-                className="ms-2 text-sm font-medium text-gray-900 "
+                className="ms-2 text-sm font-medium text-nowrap text-gray-900 "
               >
                 Stencil
               </label>
@@ -117,7 +117,7 @@ const QuoteForm = () => {
           >
             Will you require any of these special processes?
           </label>
-          <div className="flex">
+          <div className="flex flex-wrap gap-3">
             <div className="flex items-center me-4">
               <input
                 id="inline-checkbox"
@@ -127,7 +127,7 @@ const QuoteForm = () => {
               />
               <label
                 htmlFor="inline-checkbox"
-                className="ms-2 text-sm font-medium text-gray-900 "
+                className="ms-2 text-sm font-medium text-nowrap text-gray-900 "
               >
                 Environmental Test
               </label>
@@ -141,7 +141,7 @@ const QuoteForm = () => {
               />
               <label
                 htmlFor="inline-2-checkbox"
-                className="ms-2 text-sm font-medium text-gray-900"
+                className="ms-2 text-sm font-medium text-nowrap text-gray-900"
               >
                 X ray Inspection
               </label>
@@ -155,7 +155,7 @@ const QuoteForm = () => {
           >
             Do you have a Solder type requirement?
           </label>
-          <div className="flex">
+          <div className="flex flex-wrap gap-3">
             <div className="flex items-center me-4">
               <input
                 id="inline-checkbox"
@@ -165,7 +165,7 @@ const QuoteForm = () => {
               />
               <label
                 htmlFor="inline-checkbox"
-                className="ms-2 text-sm font-medium text-gray-900 "
+                className="ms-2 text-sm font-medium text-nowrap text-gray-900 "
               >
                 Tin/Lead
               </label>
@@ -179,7 +179,7 @@ const QuoteForm = () => {
               />
               <label
                 htmlFor="inline-2-checkbox"
-                className="ms-2 text-sm font-medium text-gray-900"
+                className="ms-2 text-sm font-medium text-nowrap text-gray-900"
               >
                 Lead Free
               </label>
@@ -193,7 +193,7 @@ const QuoteForm = () => {
           >
             What is your required lead time?
           </label>
-          <div className="flex">
+          <div className="flex flex-wrap gap-3">
             <div className="flex items-center me-4">
               <input
                 id="inline-checkbox"
@@ -203,10 +203,10 @@ const QuoteForm = () => {
               />
               <label
                 htmlFor="inline-checkbox"
-                className="ms-2 text-sm font-medium text-gray-900 "
+                className="ms-2 text-sm font-medium text-nowrap text-gray-900 "
               >
-                Quick Turn
-                <div>( 1 - 3 days)</div>
+                Quick Turn 
+                <span> ( 1 - 3 days)</span>
               </label>
             </div>
             <div className="flex items-center me-4">
@@ -218,7 +218,7 @@ const QuoteForm = () => {
               />
               <label
                 htmlFor="inline-2-checkbox"
-                className="ms-2 text-sm font-medium text-gray-900"
+                className="ms-2 text-sm font-medium text-nowrap text-gray-900"
               >
                 Up to 5 days
               </label>
@@ -232,7 +232,7 @@ const QuoteForm = () => {
               />
               <label
                 htmlFor="inline-2-checkbox"
-                className="ms-2 text-sm font-medium text-gray-900"
+                className="ms-2 text-sm text-nowrap font-medium text-gray-900"
               >
                 Up to 10 days
               </label>
@@ -403,22 +403,22 @@ const QuoteForm = () => {
         <ul className="flex gap-3 my-4 flex-wrap">
           <li className="flex gap-2 items-center text-sm">
             <div className="h-[6px] w-[6px] rounded-full bg-proOrange" />
-            Bill of materials.{' '}
+            Bill of materials.{" "}
           </li>
           <li className="flex gap-2 items-center  text-sm">
-            {' '}
+            {" "}
             <div className="h-[6px] w-[6px] rounded-full bg-proOrange" />
             Gerber Files
           </li>
           <li className="flex gap-2 items-center  text-sm">
-            {' '}
+            {" "}
             <div className="h-[6px] w-[6px] rounded-full bg-proOrange" />
-            Pick & Place Drawing{' '}
+            Pick & Place Drawing{" "}
           </li>
           <li className="flex gap-2 items-center  text-sm">
-            {' '}
+            {" "}
             <div className="h-[6px] w-[6px] rounded-full bg-proOrange" />
-            Assembly Drawing.{' '}
+            Assembly Drawing.{" "}
           </li>
         </ul>
         <div>

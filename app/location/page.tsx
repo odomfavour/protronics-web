@@ -1,52 +1,52 @@
-import HeaderBar from '@/components/common/HeaderBar';
-import Image from 'next/image';
-import React from 'react';
+import HeaderBar from "@/components/common/HeaderBar";
+import Image from "next/image";
+import React from "react";
 
 const LocationPage = () => {
   const categories = [
     {
       id: 1,
-      title: 'PCB Design & Engineering',
-      desc: 'PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design.',
+      title: "PCB Design & Engineering",
+      desc: "PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design.",
     },
     {
       id: 2,
-      title: 'PCB Fabrication',
-      desc: 'PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design.',
+      title: "PCB Fabrication",
+      desc: "PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design.",
     },
     {
       id: 3,
-      title: 'PCB Assembly',
-      desc: 'PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design.',
+      title: "PCB Assembly",
+      desc: "PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design.",
     },
     {
       id: 4,
-      title: 'System/Box Build',
-      desc: 'PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design.',
+      title: "System/Box Build",
+      desc: "PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design.",
     },
     {
       id: 5,
-      title: 'Supply Chain/Logistics',
-      desc: 'PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design.',
+      title: "Supply Chain/Logistics",
+      desc: "PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design.",
     },
     {
       id: 6,
-      title: 'Test & Burn In',
-      desc: 'PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design.',
+      title: "Test & Burn In",
+      desc: "PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design.",
     },
     {
       id: 7,
-      title: 'BGA Rework',
-      desc: 'PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design.',
+      title: "BGA Rework",
+      desc: "PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design.",
     },
     {
       id: 7,
-      title: 'Failure Analysis Lab',
-      desc: 'PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design.',
+      title: "Failure Analysis Lab",
+      desc: "PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design. PCB Design Layout and Rapid Design.",
     },
   ];
   return (
-    <section className="pt-[100px]">
+    <section className="pt-[120px] lg:pt-[200px]">
       <div className="w-11/12 mx-auto">
         <HeaderBar
           title="PCBA Prototype & Manufacturing Services "
@@ -117,7 +117,7 @@ const LocationPage = () => {
                       src="/images/3d.svg"
                       className=" object-contain object-center rounded-2xl"
                       fill={true}
-                      style={{ objectFit: 'contain' }}
+                      style={{ objectFit: "contain" }}
                       alt="product image"
                     />
                   </div>

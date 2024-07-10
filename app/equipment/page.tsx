@@ -1,10 +1,10 @@
-import React from 'react';
-import Image from 'next/image';
-import HeaderBar from '@/components/common/HeaderBar';
+import React from "react";
+import Image from "next/image";
+import HeaderBar from "@/components/common/HeaderBar";
 
 const Page: React.FC = () => {
   return (
-    <section className="pt-[100px]">
+    <section className="pt-[200px]">
       <div className="w-11/12 mx-auto">
         <HeaderBar
           title="Equipment"
@@ -42,7 +42,7 @@ const Page: React.FC = () => {
                 src="/images/equipment-pic.svg"
                 className=" object-contain object-center rounded-2xl "
                 fill={true}
-                style={{ objectFit: 'cover' }}
+                style={{ objectFit: "cover" }}
                 alt="product image"
               />
             </div>
@@ -61,7 +61,7 @@ const Page: React.FC = () => {
               src="/images/assembly-1.svg"
               className=" object-contain object-center rounded-2xl "
               fill={true}
-              style={{ objectFit: 'cover' }}
+              style={{ objectFit: "cover" }}
               alt="product image"
             />
           </div>
@@ -95,7 +95,7 @@ const Page: React.FC = () => {
               src="/images/assembly-2.svg"
               className=" object-contain object-center rounded-2xl "
               fill={true}
-              style={{ objectFit: 'cover' }}
+              style={{ objectFit: "cover" }}
               alt="product image"
             />
           </div>
@@ -129,7 +129,7 @@ const Page: React.FC = () => {
               src="/images/assembly-3.svg"
               className=" object-contain object-center rounded-2xl "
               fill={true}
-              style={{ objectFit: 'cover' }}
+              style={{ objectFit: "cover" }}
               alt="product image"
             />
           </div>
@@ -163,7 +163,7 @@ const Page: React.FC = () => {
               src="/images/assembly-4.svg"
               className=" object-contain object-center rounded-2xl "
               fill={true}
-              style={{ objectFit: 'cover' }}
+              style={{ objectFit: "cover" }}
               alt="product image"
             />
           </div>

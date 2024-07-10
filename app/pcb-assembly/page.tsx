@@ -1,30 +1,91 @@
-'use client';
-import HeaderBar from '@/components/common/HeaderBar';
-import PcbAssemblyTab from '@/components/services/PcbAssemblyTab';
-import Image from 'next/image';
-import React, { useState } from 'react';
+"use client";
+import HeaderBar from "@/components/common/HeaderBar";
+import Faq from "@/components/faq/Faq";
+import GetStarted from "@/components/landing/GetStarted";
+import PcbAssemblyTab from "@/components/services/PcbAssemblyTab";
+import Image from "next/image";
+import React, { useState } from "react";
+const faqData = [
+  {
+    question: "PCB Assembly",
+    answer: [
+      " NPI to production volume",
+      "Customized process solutions",
+      "High mix high part count",
+      "Small to large form factor",
+    ],
+  },
+  {
+    question: "Rework & Repair",
+    answer: [
+      "BGA/LGA repair and rework",
+      "Selective Solder",
+      "Wave solder",
+      "PCB water wash",
+      "Conformal coating",
+    ],
+  },
 
+  {
+    question: "Prototype",
+    answer: [
+      "Customer specific supply chain solutions",
+      "ISO131",
+      "Free DFA and DFM report",
+    ],
+  },
+  {
+    question: "Test & Inspection",
+    answer: [
+      "Best in class, SMT inspection and test equipment",
+      "ATE and functional test",
+      "RF assembly and test",
+      "Failure Analysis",
+    ],
+  },
+  {
+    question: "BOM Management & Life Cycle Services",
+    answer: [
+      "Customer specific supply chain solutions",
+      "ISO131",
+      "Free DFA and DFM report",
+    ],
+  },
+  {
+    question: "Wire Harness & Cable Assmbly",
+    answer: [
+      "Best in class, SMT inspection and test equipment",
+      "ATE and functional test",
+      "RF assembly and test",
+      "Failure Analysis",
+    ],
+  },
+];
 const Page = () => {
   return (
-    <section className="pt-[150px]">
+    <section className="pt-[120px] lg:pt-[200px]">
       <div className="w-11/12 mx-auto">
-        <div className="text-center pt-6">
-          <p className="lg:text-[56px] text-3xl font-bold text-[#000000] lg:w-1/2 w-full mx-auto leading-[56px] mb-5">
-            Low Volume PCB Assembly
+        <div className="text-left mb-[40px] mt-[100px]">
+          <p className="lg:text-[64px] text-3xl font-bold text-[#000000]  leading-[56px] mb-2 lg:mb-5">
+            PCB Assembly
           </p>
           <p className="lg:text-2xl text-lg font-normal">
             Discover our expertise in PCB Design.
           </p>
         </div>
-      </div>
 
-      <div className="mt-10">
-        <div className="w-11/12 mx-auto">
-          <div className="my-10 w-3/4 mx-auto border-b"></div>
-          <PcbAssemblyTab />
-          <div className="my-10 w-3/4 mx-auto border-b"></div>
+        <div className="w-full ">
+          <Image
+            src="/images/pcb-design.png"
+            alt="pcb design"
+            className="rounded-[19px]"
+            width={1300}
+            height={545}
+          />
         </div>
+        <Faq data={faqData} />
       </div>
+      <GetStarted />
     </section>
   );
 };
