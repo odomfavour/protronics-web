@@ -1,18 +1,18 @@
-'use client';
-import PcbAssemblyTab from '@/components/services/PcbAssemblyTab';
-import PcbTab from '@/components/services/PcbTab';
-import { useState } from 'react';
+"use client";
+import PcbAssemblyTab from "@/components/services/PcbAssemblyTab";
+import PcbTab from "@/components/services/PcbTab";
+import { useState } from "react";
 
 const ServicesPage = () => {
   const tabs = [
-    { id: 1, label: 'PCB Design' },
-    { id: 2, label: 'PCB Assembly' },
-    { id: 3, label: 'PCB Testing' },
-    { id: 4, label: 'IC Packaging' },
+    { id: 1, label: "PCB Design" },
+    { id: 2, label: "PCB Assembly" },
+    { id: 3, label: "PCB Testing" },
+    { id: 4, label: "IC Packaging" },
   ];
-  const [activeTab, setActiveTab] = useState('PCB Design');
+  const [activeTab, setActiveTab] = useState("PCB Design");
   return (
-    <section className="pt-[100px]">
+    <section className="pt-[120px] lg:pt-[200px]">
       <div className="w-11/12 mx-auto">
         <div className="text-center">
           <p className="text-[56px] font-bold text-[#000000]">Testing</p>
@@ -28,8 +28,8 @@ const ServicesPage = () => {
                 key={tab.id}
                 className={`py-2 px-5 border rounded-[10px] font-semibold ${
                   activeTab == tab.label
-                    ? 'bg-[#1671D9] border-[#1671D9] text-white'
-                    : 'border-proDark'
+                    ? "bg-[#1671D9] border-[#1671D9] text-white"
+                    : "border-proDark"
                 }`}
                 onClick={() => setActiveTab(tab.label)}
               >
@@ -37,8 +37,8 @@ const ServicesPage = () => {
               </button>
             ))}
           </div>
-          {activeTab === 'PCB Design' && <PcbTab />}
-          {activeTab === 'PCB Assembly' && <PcbAssemblyTab />}
+          {activeTab === "PCB Design" && <PcbTab />}
+          {activeTab === "PCB Assembly" && <PcbAssemblyTab />}
         </div>
       </div>
     </section>

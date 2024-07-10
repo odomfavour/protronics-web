@@ -1,36 +1,40 @@
-import Image from 'next/image';
-import React from 'react';
-import { FaAngleRight } from 'react-icons/fa';
+import Image from "next/image";
+import React from "react";
+import { FaAngleRight } from "react-icons/fa";
 
 const ServicesSection = () => {
   const services = [
     {
       id: 1,
-      title: 'PCB Design',
-      desc: 'Bring your vision to life and leverage our design expertise to optimize for PCBs for functionality.',
-      url: '',
-      img: '/images/service-1.svg',
+      title: "PCB Design",
+      desc: "Bring your vision to life and leverage our design expertise to optimize for PCBs for functionality.",
+      url: "",
+      img: "/images/service-Img1.svg",
+      serviceIcon: "/images/service-1.svg",
     },
     {
       id: 2,
-      title: 'PCB Assembly',
-      desc: 'Seamlessly transform your designs into high-quality, reliable circuit boards.',
-      url: '',
-      img: '/images/service-2.svg',
+      title: "PCB Assembly",
+      desc: "Seamlessly transform your designs into high-quality, reliable circuit boards.",
+      url: "",
+      img: "/images/service-Img2.svg",
+      serviceIcon: "/images/service-2.svg",
     },
     {
       id: 3,
-      title: 'Testing',
-      desc: 'Breathe new life into your PCBs with our expert rework and repair services.',
-      url: '',
-      img: '/images/service-3.svg',
+      title: "Testing",
+      desc: "Breathe new life into your PCBs with our expert rework and repair services.",
+      url: "",
+      img: "/images/service-Img3.svg",
+      serviceIcon: "/images/service-3.svg",
     },
     {
       id: 4,
-      title: 'IC Packaging',
-      desc: 'Fast-track your product development with raqpid prototyping and iterative design cycles.',
-      url: '',
-      img: '/images/service-4.svg',
+      title: "IC Packaging",
+      desc: "Fast-track your product development with raqpid prototyping and iterative design cycles.",
+      url: "",
+      img: "/images/service-Img4.svg",
+      serviceIcon: "/images/service-4.svg",
     },
   ];
   return (
@@ -44,7 +48,7 @@ const ServicesSection = () => {
         </p>
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-[30px]">
           {services.map((service) => {
-            const { id, img, title, desc } = service;
+            const { id, img, title, desc, serviceIcon } = service;
             return (
               <div key={id}>
                 <div>
@@ -53,7 +57,7 @@ const ServicesSection = () => {
                       src={img}
                       className=" object-contain object-center rounded-2xl "
                       fill={true}
-                      style={{ objectFit: 'cover' }}
+                      style={{ objectFit: "cover" }}
                       alt="product image"
                     />
                   </div>
@@ -61,10 +65,10 @@ const ServicesSection = () => {
                 <div className="bg-white px-4 py-5 rounded-sm shadow-md">
                   <div className="h-[40px] w-[40px] relative z-10">
                     <Image
-                      src="/images/service-icon.svg"
+                      src={serviceIcon}
                       className=" object-contain object-center rounded-2xl "
                       fill={true}
-                      style={{ objectFit: 'cover' }}
+                      style={{ objectFit: "cover" }}
                       alt="product image"
                     />
                   </div>

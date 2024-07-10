@@ -1,12 +1,12 @@
-import React from 'react';
-import Image from 'next/image';
-import HeaderBar from '@/components/common/HeaderBar';
+import React from "react";
+import Image from "next/image";
+import HeaderBar from "@/components/common/HeaderBar";
 
 const Page: React.FC = () => {
   const teamMembers = [
     {
-      name: 'Jan S. Alford',
-      title: 'President, Protronics',
+      name: "Jan S. Alford",
+      title: "President, Protronics",
       description: `President Jan S. Alford brings over 29 years of Manufacturing
                     and Engineering expertise to ProTronics. With 20+ years in
                     Technical Management, he specializes in Quick-turnaround PTH,
@@ -16,15 +16,15 @@ const Page: React.FC = () => {
                     Engineering support.`,
     },
     {
-      name: 'Brenda Mabrey',
-      title: 'Operations, Protronics',
+      name: "Brenda Mabrey",
+      title: "Operations, Protronics",
       description: `Brenda Mabrey brings over 31 years in Electronics Manufacturing Assembly to ProTronics. With 20+ years in Technical Management, he specializes in Quick-turnaround PTH, SMT, and FPT Prototype assemblies. Certified in MIL-STD-2000 Category “C” and experienced in Product Quality reporting, Jan also teaches Solder Certification Classes and provides crucial Engineering support.`,
     },
     // Add more team members here
   ];
 
   return (
-    <section className="pt-[100px]">
+    <section className="pt-[200px]">
       <div className="w-11/12 mx-auto">
         <HeaderBar
           title="Our Leadership"
@@ -49,23 +49,18 @@ const Page: React.FC = () => {
               commitment, and trust that precedes us both locally and globally.
             </p>
             <p className="text-lg font-normal text-[#101928] mb-5">
-              Our handpicked leadership team drives this messaging throughout
-              the organization, ensuring that every team member is aligned with
-              our core values and committed to delivering excellence in
-              everything we do. Our passion for what we do is evident in our
-              unwavering dedication to delivering ultimate customer
-              satisfaction. We are committed to fostering an environment of
-              innovation and service, where we do whatever it takes to support
-              our customers’ needs.
+              We are committed to fostering an environment of innovation and
+              service, where we do whatever it takes to support our customers’
+              needs. 
             </p>
           </div>
           <div className="lg:w-2/5 w-full flex justify-end">
             <div className="relative h-[450px] w-full">
               <Image
-                src="/images/story-pic.svg"
+                src="/images/story-pic.png"
                 className=" object-contain object-center rounded-2xl "
                 fill={true}
-                style={{ objectFit: 'cover' }}
+                style={{ objectFit: "cover" }}
                 alt="product image"
               />
             </div>
@@ -73,6 +68,12 @@ const Page: React.FC = () => {
         </div>
       </div>
       <div className="py-10 w-11/12 mx-auto">
+        <HeaderBar
+          title="Our Team"
+          subtitle="Get to know the people behind the premium services we offer."
+          border={false}
+        />
+
         <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
           {teamMembers.map((member, index) => (
             <div

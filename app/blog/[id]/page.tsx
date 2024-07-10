@@ -1,10 +1,10 @@
-import HeaderBar from '@/components/common/HeaderBar';
-import Image from 'next/image';
-import React from 'react';
+import HeaderBar from "@/components/common/HeaderBar";
+import Image from "next/image";
+import React from "react";
 
 const page = () => {
   return (
-    <section className="pt-[100px]">
+    <section className="pt-[200px]">
       <div className="w-11/12 mx-auto">
         <section className="py-10 border-black border-b">
           <div className="w-10/12 mx-auto">
@@ -23,7 +23,7 @@ const page = () => {
               src="/images/pcb-logos/pcb-xray.svg"
               className=" object-contain object-center rounded-[10px]"
               fill={true}
-              style={{ objectFit: 'cover' }}
+              style={{ objectFit: "cover" }}
               alt="product image"
             />
           </div>
@@ -63,7 +63,7 @@ const page = () => {
                 src="/images/pcb-logos/pcb-xray.svg"
                 className=" object-contain object-center rounded-[10px]"
                 fill={true}
-                style={{ objectFit: 'cover' }}
+                style={{ objectFit: "cover" }}
                 alt="product image"
               />
             </div>
@@ -72,7 +72,7 @@ const page = () => {
                 src="/images/pcb-logos/pcb-xray.svg"
                 className=" object-contain object-center rounded-[10px]"
                 fill={true}
-                style={{ objectFit: 'cover' }}
+                style={{ objectFit: "cover" }}
                 alt="product image"
               />
             </div>

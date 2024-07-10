@@ -1,39 +1,39 @@
-'use client';
-import React from 'react';
+"use client";
+import React from "react";
 import {
   Navigation,
   Pagination,
   Scrollbar,
   A11y,
   Autoplay,
-} from 'swiper/modules';
+} from "swiper/modules";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
-import 'swiper/css/autoplay';
-import Image from 'next/image';
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import "swiper/css/autoplay";
+import Image from "next/image";
 
 const testimonials = [
   {
-    name: 'Scott',
-    role: 'Engineering Technician, Extron Electronics, Inc.',
-    image: '/images/avatar-11.svg',
-    title: '“Excellent Work”',
+    name: "Scott",
+    role: "Engineering Technician, Extron Electronics, Inc.",
+    image: "/images/avatar-11.svg",
+    title: "“Excellent Work”",
     feedback:
-      'I wanted to let you know that the rework you did on my 4 boards yesterday was fantastic! All of the boards worked great, without error. We want to thank you for the excellent work, the speed at which it was done and for a most reasonable price. We will keep you at the top of our list when it comes to rework on our products. Great job and thanks again!',
+      "I wanted to let you know that the rework you did on my 4 boards yesterday was fantastic! All of the boards worked great, without error. We want to thank you for the excellent work, the speed at which it was done and for a most reasonable price. We will keep you at the top of our list when it comes to rework on our products. Great job and thanks again!",
   },
   {
-    name: 'Scott',
-    role: 'Engineering Technician, Extron Electronics, Inc.',
-    image: '/images/avatar-11.svg',
-    title: '“Excellent Work”',
+    name: "Scott",
+    role: "Engineering Technician, Extron Electronics, Inc.",
+    image: "/images/avatar-11.svg",
+    title: "“Excellent Work”",
     feedback:
-      'I wanted to let you know that the rework you did on my 4 boards yesterday was fantastic! All of the boards worked great, without error. We want to thank you for the excellent work, the speed at which it was done and for a most reasonable price. We will keep you at the top of our list when it comes to rework on our products. Great job and thanks again!',
+      "I wanted to let you know that the rework you did on my 4 boards yesterday was fantastic! All of the boards worked great, without error. We want to thank you for the excellent work, the speed at which it was done and for a most reasonable price. We will keep you at the top of our list when it comes to rework on our products. Great job and thanks again!",
   },
   // Add more testimonials here as needed
 ];
@@ -82,7 +82,7 @@ const TestimonialSection = () => {
                         src={testimonial.image}
                         className="object-contain object-center rounded-full"
                         fill={true}
-                        style={{ objectFit: 'cover' }}
+                        style={{ objectFit: "cover" }}
                         alt="product image"
                       />
                     </div>
