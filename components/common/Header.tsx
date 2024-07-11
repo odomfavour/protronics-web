@@ -1,12 +1,14 @@
-'use client';
-import React, { useState, useEffect, useRef } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import { navLinks } from '@/app/utils/data';
-import { usePathname } from 'next/navigation';
-import { FaChevronDown } from 'react-icons/fa';
-import { FaX } from 'react-icons/fa6';
-import { GiHamburgerMenu } from 'react-icons/gi';
+"use client";
+import React, { useState, useEffect, useRef } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { navLinks } from "@/app/utils/data";
+import { usePathname } from "next/navigation";
+import { FaChevronDown } from "react-icons/fa";
+import { FaX } from "react-icons/fa6";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Header = () => {
   const pathname = usePathname();
@@ -25,10 +27,10 @@ const Header = () => {
     };
 
     handleResize(); // Check initial screen size
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -68,9 +70,9 @@ const Header = () => {
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
@@ -85,101 +87,163 @@ const Header = () => {
   return (
     <>
       {!isMobileMenuOpen && (
-        <nav className="w-full top-0 z-30 left-1/2 transform -translate-x-1/2 fixed bg-white flex justify-center shadow-lg shadow-[rgba(0,0,0,0.025)]">
-          <div className="max-w-[1440px] w-11/12 mx-auto">
-            <div className="flex justify-between items-center py-5">
-              <Link href="/">
-                <Image
-                  src="/images/pro-logo.svg"
-                  width="74"
-                  height="34"
-                  alt="logo"
-                />
-              </Link>
-              <ul className="lg:flex items-center gap-12 hidden">
-                {navLinks.map((itemLink: any, index: number) => (
-                  <li
-                    key={itemLink.id}
-                    className="relative group"
-                    ref={(el) => {
-                      dropdownRefs.current[index] = el;
-                    }}
-                  >
-                    {itemLink.children ? (
-                      <button
-                        className={`text-base text-[#101928] font-normal pb-2 flex items-center ${
-                          pathname === itemLink.url ||
-                          activeParent === itemLink.id
-                            ? 'font-semibold'
-                            : 'font-normal'
-                        }`}
-                        onClick={() => handleDropdown(itemLink.id)}
-                      >
-                        {itemLink.name}
-                        {itemLink.children && (
-                          <span
-                            className={`ml-2 transform transition-transform ${
-                              openDropdown === itemLink.id
-                                ? 'rotate-180'
-                                : 'rotate-0'
-                            }`}
-                          >
-                            <FaChevronDown />
-                          </span>
-                        )}
-                      </button>
-                    ) : (
-                      <Link
-                        href={itemLink.url}
-                        className="text-base text-[#101928] font-normal pb-2 flex items-center"
-                      >
-                        {itemLink.name}
-                      </Link>
-                    )}
-                    {itemLink.children && openDropdown === itemLink.id && (
-                      <ul className="absolute bg-white shadow-lg mt-2 min-w-[180px] opacity-100 transition-opacity duration-300">
-                        {itemLink.children.map((subLink: any) => (
-                          <li key={subLink.id}>
-                            <Link
-                              href={subLink.url}
-                              className="block px-4 py-2 text-[#101928] hover:bg-gray-200"
-                              onClick={closeDropdown}
-                            >
-                              <div className="flex items-center gap-3">
-                                <div className="h-[8px] w-[8px] rounded-full bg-[#98A2B3]" />{' '}
-                                {subLink.name}
-                              </div>
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </li>
-                ))}
-              </ul>
-              <div className="lg:flex items-center gap-4 hidden">
-                <Link href="/" className="text-proOrange">
-                  Login
-                </Link>
-                <Link
-                  href="/quote"
-                  className="bg-proOrange rounded px-[24px] py-[10px] font-semibold text-base text-white"
-                >
-                  Get a quote
-                </Link>
+        <div className="fixed top-0 w-full  z-30">
+          <div className="bg-black ">
+            <div className="lg:max-w-[1440px] w-11/12 mx-auto py-[15px] text-white text-xs font-medium xl:gap-[299px] flex lg:flex-row flex-col gap-3 items-center">
+              <div className="flex gap-[16px]">
+                <p className="text-[#E3EFFC] text-nowrap ">Contact Us</p>
+                <div className="flex items-center gap-1">
+                  <Image
+                    src="/images/svg/header-phone-icon.svg"
+                    alt="phone icon"
+                    width={16}
+                    height={16}
+                  />
+                  <p className="text-nowrap">+1 2345 56768</p>
+                </div>
               </div>
-              <div
-                className="hamburger cursor-pointer lg:hidden block"
-                onClick={toggleMobileMenu}
-              >
-                <GiHamburgerMenu
-                  role="button"
-                  className="text-[#F37B23] text-3xl"
-                />
+              <div className="flex mx-auto gap-[16px]">
+                <p className="text-[#E3EFFC] text-nowrap ">Send a Mail</p>
+                <div className="flex items-center gap-1">
+                  <Image
+                    src="/images/svg/header-email-icon.svg"
+                    alt="email icon"
+                    width={16}
+                    height={16}
+                  />
+                  <p className="text-nowrap">sales@protronics-inc.com</p>
+                </div>
+              </div>
+              <div className="lg:ml-auto">
+                <ul className="flex gap-6">
+                  <li>
+                    <Link href="#" className="text-[#D0D5DD] font-medium">
+                      <div className="rounded-full h-6 w-6 bg-proOrange flex items-center justify-center">
+                        <FaFacebook />
+                      </div>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#" className="text-[#D0D5DD] font-medium">
+                      <div className="rounded-full h-6 w-6 bg-proOrange  flex items-center justify-center">
+                        <FaXTwitter />
+                      </div>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#" className="text-[#D0D5DD] font-medium">
+                      <div className="rounded-full h-6 w-6 bg-proOrange  flex items-center justify-center">
+                        <FaInstagram />
+                      </div>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#" className="text-[#D0D5DD] font-medium">
+                      <div className="rounded-full h-6 w-6 bg-proOrange  flex items-center justify-center">
+                        <FaLinkedin />
+                      </div>
+                    </Link>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-        </nav>
+          <nav className="w-full  bg-white flex justify-center shadow-lg shadow-[rgba(0,0,0,0.025)]">
+            <div className="max-w-[1440px] w-11/12 mx-auto">
+              <div className="flex justify-between items-center py-5">
+                <Link href="/">
+                  <Image
+                    src="/images/svg/proLogo.svg"
+                    width="148"
+                    height="31"
+                    alt="logo"
+                  />
+                </Link>
+                <ul className="lg:flex items-center gap-12 hidden">
+                  {navLinks.map((itemLink: any, index: number) => (
+                    <li
+                      key={itemLink.id}
+                      className="relative group"
+                      ref={(el) => {
+                        dropdownRefs.current[index] = el;
+                      }}
+                    >
+                      {itemLink.children ? (
+                        <button
+                          className={`text-base text-[#101928] font-normal  flex items-center ${
+                            pathname === itemLink.url ||
+                            activeParent === itemLink.id
+                              ? "font-semibold"
+                              : "font-normal"
+                          }`}
+                          onClick={() => handleDropdown(itemLink.id)}
+                        >
+                          {itemLink.name}
+                          {itemLink.children && (
+                            <span
+                              className={`ml-2 transform transition-transform ${
+                                openDropdown === itemLink.id
+                                  ? "rotate-180"
+                                  : "rotate-0"
+                              }`}
+                            >
+                              <FaChevronDown />
+                            </span>
+                          )}
+                        </button>
+                      ) : (
+                        <Link
+                          href={itemLink.url}
+                          className="text-base text-[#101928] font-normal  flex items-center"
+                        >
+                          {itemLink.name}
+                        </Link>
+                      )}
+                      {itemLink.children && openDropdown === itemLink.id && (
+                        <ul className="absolute bg-white shadow-lg mt-2 min-w-[180px] opacity-100 transition-opacity duration-300">
+                          {itemLink.children.map((subLink: any) => (
+                            <li key={subLink.id}>
+                              <Link
+                                href={subLink.url}
+                                className="block px-4 py-2 text-[#101928] hover:bg-gray-200"
+                                onClick={closeDropdown}
+                              >
+                                <div className="flex items-center gap-3">
+                                  <div className="h-[8px] w-[8px] rounded-full bg-[#98A2B3]" />{" "}
+                                  {subLink.name}
+                                </div>
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+                <div className="lg:flex items-center gap-4 hidden">
+                  <Link href="/" className="text-proOrange">
+                    Login
+                  </Link>
+                  <Link
+                    href="/quote"
+                    className="bg-proOrange rounded px-[24px] py-[10px] font-semibold text-base text-white"
+                  >
+                    Get a quote
+                  </Link>
+                </div>
+                <div
+                  className="hamburger cursor-pointer lg:hidden block"
+                  onClick={toggleMobileMenu}
+                >
+                  <GiHamburgerMenu
+                    role="button"
+                    className="text-[#034592] text-3xl"
+                  />
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
       )}
       {isMobileMenuOpen && isMobileView && (
         <div className="fixed h-full z-40 top-0 left-0 w-2/3 bg-white p-3">
@@ -187,7 +251,7 @@ const Header = () => {
             <div className=" flex justify-between items-center">
               <Link href="/">
                 <Image
-                  src="/images/pro-logo.svg"
+                  src="/images/svg/proLogo.svg"
                   width="74"
                   height="34"
                   alt="logo"
@@ -195,7 +259,7 @@ const Header = () => {
               </Link>
               <div>
                 <FaX
-                  className="text-lg"
+                  className="text-lg text-[#034592]"
                   role="button"
                   onClick={closeMobileMenu}
                 />
@@ -215,8 +279,8 @@ const Header = () => {
                       className={`text-base text-[#101928] font-normal pb-2 flex items-center ${
                         pathname === itemLink.url ||
                         activeParent === itemLink.id
-                          ? 'font-semibold'
-                          : 'font-normal'
+                          ? "font-semibold"
+                          : "font-normal"
                       }`}
                       onClick={() => handleDropdown(itemLink.id)}
                     >
@@ -225,8 +289,8 @@ const Header = () => {
                         <span
                           className={`ml-2 transform transition-transform ${
                             openDropdown === itemLink.id
-                              ? 'rotate-180'
-                              : 'rotate-0'
+                              ? "rotate-180"
+                              : "rotate-0"
                           }`}
                         >
                           <FaChevronDown />
@@ -252,7 +316,7 @@ const Header = () => {
                             onClick={closeMobileMenu}
                           >
                             <div className="flex items-center gap-3">
-                              <div className="h-[8px] w-[8px] rounded-full bg-[#98A2B3]" />{' '}
+                              <div className="h-[8px] w-[8px] rounded-full bg-[#98A2B3]" />{" "}
                               {subLink.name}
                             </div>
                           </Link>

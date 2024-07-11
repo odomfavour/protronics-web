@@ -1,44 +1,44 @@
-'use client';
-import Image from 'next/image';
-import React from 'react';
-import { FaAngleRight } from 'react-icons/fa';
+"use client";
+import Image from "next/image";
+import React from "react";
+import { FaAngleRight } from "react-icons/fa";
 import {
   Navigation,
   Pagination,
   Scrollbar,
   A11y,
   Autoplay,
-} from 'swiper/modules';
+} from "swiper/modules";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
-import 'swiper/css/autoplay';
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import "swiper/css/autoplay";
 
 const HeroSection = () => {
   const heroSlides = [
     {
-      title: 'Experience Seamless PCB Solutions',
-      subtitle: 'We offer precision craftsmanship everytime.',
-      image: '/images/hero-pic.svg',
-      quoteText: 'Get a quote',
-      learnMoreText: 'Learn More',
+      title: "Experience Seamless PCB Solutions",
+      subtitle: "We offer precision craftsmanship everytime.",
+      image: "/images/hero-pic.svg",
+      quoteText: "Get a quote",
+      learnMoreText: "Learn More",
     },
     {
-      title: 'Innovative Design and Engineering',
-      subtitle: 'Your vision, our expertise.',
-      image: '/images/hero-pic.svg',
-      quoteText: 'Get a quote',
-      learnMoreText: 'Learn More',
+      title: "Innovative Design and Engineering",
+      subtitle: "Your vision, our expertise.",
+      image: "/images/hero-pic.svg",
+      quoteText: "Get a quote",
+      learnMoreText: "Learn More",
     },
     // Add more slides as needed
   ];
   return (
-    <section className="mt-[100px]">
+    <section className="mt-[150px]">
       <div className="w-11/12 mx-auto">
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
@@ -56,7 +56,7 @@ const HeroSection = () => {
                     {slide.title}
                   </p>
                   <p className="lg:mt-[24px] mt-4 text-[#1D2739] lg:text-2xl text-lg">
-                    {' '}
+                    {" "}
                     {slide.subtitle}
                   </p>
                   <div className="flex items-center lg:gap-[24px] gap-4 mt-[20px]">
@@ -74,7 +74,7 @@ const HeroSection = () => {
                       src="/images/hero-pic.svg"
                       className=" object-contain object-center rounded-2xl"
                       fill={true}
-                      style={{ objectFit: 'contain' }}
+                      style={{ objectFit: "contain" }}
                       alt="product image"
                     />
                   </div>
