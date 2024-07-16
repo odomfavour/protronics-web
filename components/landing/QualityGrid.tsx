@@ -1,37 +1,37 @@
-import Image from 'next/image';
-import React from 'react';
+import Image from "next/image";
+import React from "react";
 
 const QualityGrid = () => {
   const pcbs = [
     {
       id: 1,
-      name: 'IPC-A-610 Class 2 and 3',
-      img: '/images/pcb-logos/ipc.svg',
+      name: "IPC-A-610 Class 2 and 3",
+      img: "/images/pcb-logos/ipc.svg",
     },
     {
       id: 2,
-      name: 'Surface Mount Technology Association',
-      img: '/images/pcb-logos/smta.svg',
+      name: "Surface Mount Technology Association",
+      img: "/images/pcb-logos/smta.svg",
     },
     {
       id: 3,
-      name: 'Just-In-Time Management (JIT)',
-      img: '/images/pcb-logos/iso.svg',
+      name: "Just-In-Time Management (JIT)",
+      img: "/images/pcb-logos/iso.svg",
     },
     {
       id: 4,
-      name: 'International Traffic in Arms Regulation',
-      img: '/images/pcb-logos/it.svg',
+      name: "International Traffic in Arms Regulation",
+      img: "/images/pcb-logos/it.svg",
     },
     {
       id: 5,
-      name: 'Restriction of Hazardous Substance (RoHS)',
-      img: '/images/pcb-logos/rohs.svg',
+      name: "Restriction of Hazardous Substance (RoHS)",
+      img: "/images/pcb-logos/rohs.svg",
     },
     {
       id: 6,
-      name: 'ISO 9000 Preparation',
-      img: '/images/pcb-logos/iso.svg',
+      name: "ISO 9000 Preparation",
+      img: "/images/pcb-logos/iso.svg",
     },
   ];
   return (
@@ -41,7 +41,7 @@ const QualityGrid = () => {
           {pcbs.map((pcb) => {
             return (
               <div
-                className="bg-white border shadow-md py-4 px-7 rounded-[10px]"
+                className="bg-white border py-4 px-7 rounded-[10px]"
                 key={pcb.id}
               >
                 <div className="relative h-[37px] w-[74px]">
@@ -49,7 +49,7 @@ const QualityGrid = () => {
                     src={pcb.img}
                     className=" object-contain object-center rounded-2xl "
                     fill={true}
-                    style={{ objectFit: 'contain' }}
+                    style={{ objectFit: "contain" }}
                     alt="product image"
                   />
                 </div>
