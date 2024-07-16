@@ -13,19 +13,19 @@ const IndustriesPage = () => {
     {
       id: 2,
       image: "/images/health-ind.png",
-      title: "Communications & Network",
+      title: "Health Care",
       desc: "100% inspection to IPC-A-610 criteria using X-Ray and semi-automated optical inspection. 100% inspection to IPC-A-610 criteria using X-Ray and semi-automated optical inspection.",
     },
     {
       id: 3,
       image: "/images/mask-ind.png",
-      title: "Health Tech",
+      title: "Telecom",
       desc: "100% inspection to IPC-A-610 criteria using X-Ray and semi-automated optical inspection. 100% inspection to IPC-A-610 criteria using X-Ray and semi-automated optical inspection.",
     },
     {
       id: 4,
       image: "/images/lab-ind.png",
-      title: "Consumer Electronics",
+      title: "Industrial",
       desc: "100% inspection to IPC-A-610 criteria using X-Ray and semi-automated optical inspection. 100% inspection to IPC-A-610 criteria using X-Ray and semi-automated optical inspection.",
     },
   ];

@@ -1,8 +1,37 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import HeaderBar from "@/components/common/HeaderBar";
 import Link from "next/link";
 import { SlArrowRight } from "react-icons/sl";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper/modules";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import "swiper/css/autoplay";
+
+const equipments = [
+  {
+    title: "Surface Mount Technologies (SMT)",
+    image: "/images/assembly-1.svg",
+  },
+  {
+    title: "Surface Mount Technologies (SMT)”",
+    image: "/images/assembly-2.svg",
+  },
+];
+
 const page = () => {
   return (
     <section className="pt-[200px]">
@@ -37,13 +66,13 @@ const page = () => {
             <div className="flex items-center gap-4 ">
               <Link
                 href="/quote"
-                className="bg-proOrange w-[200px] rounded-[8px] p-[16px] font-semibold text-base text-white"
+                className="bg-proOrange w-[141px] flex items-center justify-center rounded-[8px] p-[16px] font-semibold text-sm lg:text-base text-white"
               >
                 Get a quote
               </Link>
               <Link
                 href="/"
-                className="text-proOrange  w-[200px] border-[1.5px] p-[15px] rounded-[8px] border-[#034592] flex items-center gap-3"
+                className="text-proOrange text-sm lg:text-base justify-center  w-[152px] border-[1.5px] p-[15px] rounded-[8px] border-[#034592] flex items-center gap-3"
               >
                 Learn More
                 <SlArrowRight />
@@ -124,6 +153,66 @@ const page = () => {
             </div>
           </div>
         </section>
+      </div>
+
+      {/* Equipment section */}
+      <div className="bg-[#E3EFFC]">
+        <div className="w-11/12 mx-auto py-[80px] lg:py-[120px]">
+          <div>
+            <div className="flex items-center gap-4 justify-start">
+              <div className="w-[80px] h-[3px] bg-[#1D2130]"></div>
+              <p className="text-[#1D2130] font-semibold text-lg lg:text-xl">
+                Our Equipment
+              </p>
+            </div>
+            <div className="mt-8">
+              <Swiper
+                modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+                spaceBetween={30}
+                autoplay
+                loop={true}
+                breakpoints={{
+                  640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                  },
+                  768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                  },
+                  1024: {
+                    slidesPerView: 2,
+                  },
+                }}
+              >
+                {equipments.map((equipment, index) => (
+                  <SwiperSlide key={index}>
+                    <div>
+                      <div className="flex items-center justify-between">
+                        <div className="w-full">
+                          <Image
+                            src={equipment.image}
+                            className=" w-full"
+                            width={500}
+                            height={500}
+                            // fill={true}
+                            // style={{ objectFit: "cover" }}
+                            alt="product image"
+                          />
+                        </div>
+                      </div>
+                      <div className="mt-3">
+                        <p className="font-bold text-black lg:text-[32px] text-lg">
+                          {equipment.title}
+                        </p>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

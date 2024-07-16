@@ -3,7 +3,25 @@ import Link from "next/link";
 
 const GetStarted = () => {
   return (
-    <div className="bg-[#E3EFFC] flex flex-col items-center py-[65px]">
+    <div className="bg-[#E3EFFC] flex flex-col max-h-[318px] items-center py-[65px] relative">
+      <div className="absolute left-0 top-0">
+        <Image
+          src="/images/subtle-bg-left.png"
+          alt="subtle-bg"
+          className="w-full h-[318px] hidden lg:block"
+          width={500}
+          height={500}
+        />
+      </div>
+      <div className="absolute right-0 top-0">
+        <Image
+          src="/images/subtle-bg-right.png"
+          className="w-full h-[318px] hidden lg:block"
+          alt="subtle-bg"
+          width={500}
+          height={500}
+        />
+      </div>
       <div>
         <h1 className="text-proDark text-center text-[30px] lg:text-[64px] font-bold">
           Ready to Get Started?

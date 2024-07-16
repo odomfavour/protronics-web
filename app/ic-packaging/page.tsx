@@ -37,21 +37,12 @@ const accordionData = [
       <>
         <ul className="ml-5">
           <li className="list-disc mb-2">
-            Package design and selection (ceramic and plastic substrates)
-          </li>
-          <ul className="pl-3">
-            <li className="list-disc mb-2">Thermal management</li>
-          </ul>
-          <li className="list-disc mb-2">
-            {" "}
-            Materials selection and evaluation
+            Manual and automated, precision die placement
           </li>
           <li className="list-disc mb-2">
-            Packaging and assembly process development{" "}
-          </li>{" "}
-          <li className="list-disc mb-2">
-            Full custom microsystems and integration
+            Conductive and nonconductive organic (epoxy) die attach materials
           </li>
+          <li className="list-disc mb-2">Eutectic die attach </li>
         </ul>
       </>
     ),
@@ -61,22 +52,14 @@ const accordionData = [
     content: (
       <>
         <ul className="ml-5">
-          <li className="list-disc mb-2">
-            Package design and selection (ceramic and plastic substrates)
-          </li>
+          <li className="list-disc mb-2">Programmed Die Encapsulation </li>
+          <li className="list-disc mb-2"> Hermetic ceramic packaging</li>
           <ul className="pl-3">
-            <li className="list-disc mb-2">Thermal management</li>
+            <li className="list-disc mb-2">Solder lid seal</li>
+            <li className="list-disc mb-2">Parallel seam sealing</li>
           </ul>
-          <li className="list-disc mb-2">
-            {" "}
-            Materials selection and evaluation
-          </li>
-          <li className="list-disc mb-2">
-            Packaging and assembly process development{" "}
-          </li>{" "}
-          <li className="list-disc mb-2">
-            Full custom microsystems and integration
-          </li>
+          <li className="list-disc mb-2">Glob top</li>{" "}
+          <li className="list-disc mb-2">Dam and fill</li>
         </ul>
       </>
     ),
@@ -86,21 +69,15 @@ const accordionData = [
     content: (
       <>
         <ul className="ml-5">
-          <li className="list-disc mb-2">
-            Package design and selection (ceramic and plastic substrates)
-          </li>
+          <li className="list-disc mb-2">Manual and automated wire bonding </li>
+          <li className="list-disc mb-2">Aluminum and gold wire</li>
           <ul className="pl-3">
-            <li className="list-disc mb-2">Thermal management</li>
+            <li className="list-disc mb-2">Wedge and ball bonding</li>
           </ul>
+          <li className="list-disc mb-2">Fine pitch (down to 50 µm)</li>
+          <li className="list-disc mb-2">High wire count</li>
           <li className="list-disc mb-2">
-            {" "}
-            Materials selection and evaluation
-          </li>
-          <li className="list-disc mb-2">
-            Packaging and assembly process development{" "}
-          </li>{" "}
-          <li className="list-disc mb-2">
-            Full custom microsystems and integration
+            wire bonding to ceramic, organic and metal packages{" "}
           </li>
         </ul>
       </>
@@ -111,22 +88,10 @@ const accordionData = [
     content: (
       <>
         <ul className="ml-5">
-          <li className="list-disc mb-2">
-            Package design and selection (ceramic and plastic substrates)
-          </li>
-          <ul className="pl-3">
-            <li className="list-disc mb-2">Thermal management</li>
-          </ul>
-          <li className="list-disc mb-2">
-            {" "}
-            Materials selection and evaluation
-          </li>
-          <li className="list-disc mb-2">
-            Packaging and assembly process development{" "}
-          </li>{" "}
-          <li className="list-disc mb-2">
-            Full custom microsystems and integration
-          </li>
+          <li className="list-disc mb-2">Eutectic and high Pb solders </li>
+          <li className="list-disc mb-2">Au stud bumping (wafer or die)</li>
+          <li className="list-disc mb-2">Plastic and ceramic substrates </li>
+          <li className="list-disc mb-2">Precision underfill dispensing </li>
         </ul>
       </>
     ),
@@ -136,22 +101,23 @@ const accordionData = [
     content: (
       <>
         <ul className="ml-5">
-          <li className="list-disc mb-2">
-            Package design and selection (ceramic and plastic substrates)
-          </li>
+          <li className="list-disc mb-2">Multi-chip modules </li>
+          <li className="list-disc mb-2">Thermo-compression bonding </li>
           <ul className="pl-3">
-            <li className="list-disc mb-2">Thermal management</li>
+            <li className="list-disc mb-2">
+              Die-to-die, wafer-to-wafer, and die-to-wafer
+            </li>
           </ul>
+          <li className="list-disc mb-2">MEMs packaging and assembly</li>
           <li className="list-disc mb-2">
-            {" "}
-            Materials selection and evaluation
-          </li>
-          <li className="list-disc mb-2">
-            Packaging and assembly process development{" "}
+            Packaging and assembly process development
           </li>{" "}
-          <li className="list-disc mb-2">
-            Full custom microsystems and integration
-          </li>
+          <li className="list-disc mb-2">RF assembly</li>
+          <li className="list-disc mb-2">Mechanical Assembly</li>
+          <li className="list-disc mb-2">Optoelectronic assembly</li>
+          <li className="list-disc mb-2">Flex circuit assembly</li>
+          <li className="list-disc mb-2">Surface mount</li>
+          <li className="list-disc mb-2">Rework and repackaging</li>
         </ul>
       </>
     ),
@@ -161,22 +127,14 @@ const accordionData = [
     content: (
       <>
         <ul className="ml-5">
+          <li className="list-disc mb-2 ">3-D X-Ray Tomography </li>
+          <li className="list-disc mb-2 ">Scanning Acoustic Microscopy </li>
+          <li className="list-disc mb-2 ">White Light Interferometry </li>
           <li className="list-disc mb-2 ">
-            Package design and selection (ceramic and plastic substrates)
+            Gross and Fine Leak Testing of Hermetic Packages{" "}
           </li>
-          <ul className="pl-3">
-            <li className="list-disc mb-2">Thermal management</li>
-          </ul>
-          <li className="list-disc mb-2">
-            {" "}
-            Materials selection and evaluation
-          </li>
-          <li className="list-disc mb-2">
-            Packaging and assembly process development{" "}
-          </li>{" "}
-          <li className="list-disc mb-2">
-            Full custom microsystems and integration
-          </li>
+
+          <li className="list-disc mb-2"> Mil-Std Inspection</li>
         </ul>
       </>
     ),
@@ -191,7 +149,7 @@ const Page = () => {
   };
 
   return (
-    <section className="pt-[120px] lg:pt-[200px] ">
+    <section className="pt-[120px] lg:pt-[150px] ">
       <div className="w-11/12 mx-auto">
         <div className="text-left mb-[40px] mt-[100px]">
           <p className="lg:text-[64px] text-3xl font-bold text-[#000000] lg:leading-[54px] mb-5">
@@ -236,17 +194,20 @@ const Page = () => {
           <div id="accordion-collapse" data-accordion="collapse">
             {accordionData.map((item, index) => (
               <div key={index} className="mb-5">
-                <h2 id={`accordion-collapse-heading-${index}`}>
+                <h2
+                  className="text-lg lg:text-xl"
+                  id={`accordion-collapse-heading-${index}`}
+                >
                   <button
                     type="button"
-                    className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-proDark border border-b-0 border-[#E4E7EC] gap-3 rounded-t-[10px] bg-gray-100 focus:bg-[#C6DDF7]"
+                    className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-proDark border h-[80px] border-[#E4E7EC] gap-3 rounded-t-[10px]  focus:bg-[#C6DDF7]"
                     onClick={() => toggleAccordion(index)}
                     aria-expanded={openItem === index}
                     aria-controls={`accordion-collapse-body-${index}`}
                   >
                     <span>{item.title}</span>
                     <IoIosArrowUp
-                      className={`text-[#F56630] w-3 h-3 ${
+                      className={`text-[#F56630]  ${
                         openItem === index ? "rotate-180" : ""
                       } shrink-0`}
                     />
@@ -257,7 +218,7 @@ const Page = () => {
                   className={`${openItem === index ? "" : "hidden"}`}
                   aria-labelledby={`accordion-collapse-heading-${index}`}
                 >
-                  <div className="p-5  border border-t-0 border-gray-200 bg-[#E3EFFC] rounded-b-[10px] text-[#001633]">
+                  <div className="p-5 text-sm lg:text-lg  border border-t-0 border-gray-200 bg-[#E3EFFC] rounded-b-[10px] text-[#001633]">
                     {item.content}
                   </div>
                 </div>

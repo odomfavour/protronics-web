@@ -63,7 +63,7 @@ const faqData = [
 ];
 const Page = () => {
   return (
-    <section className="pt-[120px] lg:pt-[200px]">
+    <section className="pt-[120px] lg:pt-[150px]">
       <div className="w-11/12 mx-auto">
         <div className="text-left mb-[40px] mt-[100px]">
           <p className="lg:text-[64px] text-3xl font-bold text-[#000000]  leading-[56px] mb-2 lg:mb-5">

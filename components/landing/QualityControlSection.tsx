@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import React from 'react';
+import Image from "next/image";
+import React from "react";
 
 const QualityControlSection = () => {
   return (
@@ -24,12 +24,12 @@ const QualityControlSection = () => {
                       src="/images/pcb-logos/pcb-xray.svg"
                       className=" object-contain object-center "
                       fill={true}
-                      style={{ objectFit: 'cover' }}
+                      style={{ objectFit: "cover" }}
                       alt="product image"
                     />
                   </div>
                 </div>
-                <div className="bg-white px-4 py-5 rounded-sm shadow-md min-h-[120px]">
+                <div className="bg-white px-4 py-5 rounded-sm min-h-[120px]">
                   <p className="text-proDark lg:text-[28px] text-lg font-semibold">
                     PCB X-Ray Inspection
                   </p>
@@ -48,12 +48,12 @@ const QualityControlSection = () => {
                       src="/images/pcb-logos/env-testing.svg"
                       className=" object-contain object-center"
                       fill={true}
-                      style={{ objectFit: 'cover' }}
+                      style={{ objectFit: "cover" }}
                       alt="product image"
                     />
                   </div>
                 </div>
-                <div className="bg-white px-4 py-5 rounded-sm shadow-md min-h-[120px]">
+                <div className="bg-white px-4 py-5 rounded-sm min-h-[120px]">
                   <p className="text-proDark lg:text-[28px] text-lg font-semibold">
                     Environmental Testing
                   </p>
