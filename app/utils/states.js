@@ -1,5 +1,5 @@
 {
-  "states": [
+  "states" = [
     "Alabama",
     "Alaska",
     "Arizona",
