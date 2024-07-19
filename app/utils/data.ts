@@ -11,15 +11,21 @@ export const navLinks = [
       { id: "ic-packaging", name: "IC Packaging", url: "/ic-packaging" },
     ],
   },
+  // Removed for now
+  // {
+  //   id: 3,
+  //   name: "Company",
+  //   url: "#",
+  //   children: [
+  //     { id: "about-us", name: "About Us", url: "/story" },
+  //     { id: "leadership", name: "Leadership", url: "/leadership" },
+  //     { id: "equipment", name: "Equipment", url: "/equipment" },
+  //   ],
+  // },
   {
     id: 3,
-    name: "Company",
-    url: "#",
-    children: [
-      { id: "about-us", name: "About Us", url: "/story" },
-      { id: "leadership", name: "Leadership", url: "/leadership" },
-      { id: "equipment", name: "Equipment", url: "/equipment" },
-    ],
+    name: "About Us",
+    url: "/story",
   },
   {
     id: 4,

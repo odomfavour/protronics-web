@@ -77,7 +77,7 @@ const Page = () => {
 
           <div className="w-full ">
             <Image
-              src="/images/pcb-design.png"
+              src="/images/pcb-assembly-two.png"
               alt="pcb design"
               className="rounded-[19px]"
               width={1300}
