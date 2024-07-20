@@ -1,11 +1,11 @@
 export const protronicsStates = {
 	arlington: 'Arlington, VA',
-	atlanta: 'Atlant, GA',
+	atlanta: 'Atlanta, GA',
 	austin: 'Austin, TX',
 	baltimore: 'Baltimore, MD',
 	boston: 'Boston, MA',
 	chicago: 'Chicago, IL',
-	colombia: 'Colombia, SC',
+	columbia: 'Columbia, SC',
 	hillsborough: 'Hillsborough, OR',
 	houston: 'Houston, TX',
 	'new-jersey': 'New Jersey, NJ',
@@ -14,7 +14,8 @@ export const protronicsStates = {
 	raleigh: 'Raleigh, NC',
 	'san-jose': 'San Jose, CA',
 	tampa: 'Tampa, FL',
-	tennessee: 'Tennessee, TN',
+	tennessee: 'Nashville, TN',
 	washington: 'Washington, D.C',
   knightdale: 'Knightdale, NC',
+	charlotte: 'Charlotte, NC',
 };

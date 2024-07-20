@@ -1,10 +1,7 @@
 'use client';
-import HeaderBar from '@/components/common/HeaderBar';
 import Faq from '@/components/faq/Faq';
 import GetStarted from '@/components/landing/GetStarted';
-import PcbAssemblyTab from '@/components/services/PcbAssemblyTab';
 import Image from 'next/image';
-import React, { useState } from 'react';
 const faqData = [
   {
     question: 'PCB Assembly',
@@ -77,7 +74,7 @@ const Page = () => {
 
           <div className="w-full ">
             <Image
-              src="/images/pcb-assembly-two.png"
+              src="/images/pcb-assembly.png"
               alt="pcb design"
               className="rounded-[19px]"
               width={1300}
