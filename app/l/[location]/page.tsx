@@ -3,6 +3,13 @@ import Image from 'next/image';
 import { protronicsStates } from '@/app/utils/protronics-states';
 import Partners from '@/components/landing/Partners';
 import QualityGrid from '@/components/landing/QualityGrid';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Our Location - Protronics Inc.',
+  description:
+    'The quick turn EMS, PCB Design, PCB assembly and IC packaging specialist',
+}
 
 const LocationPage = ({ params }: { params: { location: string } }) => {
 	const categories = [

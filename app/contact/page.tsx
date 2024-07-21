@@ -1,6 +1,14 @@
+import { Metadata } from 'next';
 import React from 'react';
 import { FaRegEnvelope } from 'react-icons/fa';
 import { LuPhone } from 'react-icons/lu';
+
+export const metadata: Metadata = {
+  title: 'Contact Us - Protronics-inc',
+  description:
+    'The quick turn EMS, PCB Design, PCB assembly and IC packaging specialist',
+}
+
 const page = () => {
   return (
     <section className="pt-[200px]">

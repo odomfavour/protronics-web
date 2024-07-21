@@ -1,6 +1,12 @@
-import React from 'react';
 import Image from 'next/image';
 import HeaderBar from '@/components/common/HeaderBar';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Leadership - Protronics Inc.',
+  description:
+    'The quick turn EMS, PCB Design, PCB assembly and IC packaging specialist',
+}
 
 const Page: React.FC = () => {
   const teamMembers = [

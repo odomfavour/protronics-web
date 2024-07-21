@@ -1,7 +1,14 @@
 import QuoteForm from '@/components/quote/QuoteForm';
+import { Metadata } from 'next';
 import React from 'react';
 import { FaRegEnvelope } from 'react-icons/fa';
 import { LuPhone } from 'react-icons/lu';
+
+export const metadata: Metadata = {
+  title: 'Quote - Protronics Inc.',
+  description:
+    'The quick turn EMS, PCB Design, PCB assembly and IC packaging specialist',
+}
 
 const page = () => {
   return (
