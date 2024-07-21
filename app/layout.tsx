@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: "Protronics Inc.",
     type: "website",
     url: 'https://protronics-inc.com',
-    images: ["opengraph-image.png"],
+    images: ["/opengraph-image.png"],
     siteName: 'Protronics Inc.',
   }
 };
