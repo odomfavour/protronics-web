@@ -23,21 +23,24 @@ const HeroSection = () => {
   const heroSlides = [
     {
       title: 'Rapid Prototyping, Accelerated New Product Innovation',
-      subtitle: 'Streamline your product development with our fast-paced prototyping and iterative design cycles.',
+      subtitle:
+        'Streamline your product development with our fast-paced prototyping and iterative design cycles.',
       image: '/images/pcb-design-hero.png',
       quoteText: 'Get a quote',
       learnMoreText: 'Learn More',
     },
     {
       title: 'Seamless PCB Design and Assembly',
-      subtitle: 'We deliver flawless PCB assembly, ensuring your designs are brought to life with the utmost precision and care.',
+      subtitle:
+        'We deliver flawless PCB assembly, ensuring your designs are brought to life with the utmost precision and care.',
       image: '/images/hero-pic.svg',
       quoteText: 'Get a quote',
       learnMoreText: 'Learn More',
     },
     {
       title: 'Revive Your Electronics with Our Quality EMS',
-      subtitle: 'Our expert rework and repair services will breathe new life into your circuit boards, restoring them to peak performance.',
+      subtitle:
+        'Our expert rework and repair services will breathe new life into your circuit boards, restoring them to peak performance.',
       image: '/images/hero-pic.svg',
       quoteText: 'Get a quote',
       learnMoreText: 'Learn More',
@@ -78,7 +81,7 @@ const HeroSection = () => {
                 <div className="lg:w-2/3 w-full flex justify-end">
                   <div className="h-[398px] md:w-[428px] w-full relative">
                     <Image
-                      src="/images/hero-pic.svg"
+                      src="/images/svg/hero-img.svg"
                       className=" object-contain object-center rounded-2xl"
                       fill={true}
                       style={{ objectFit: 'contain' }}

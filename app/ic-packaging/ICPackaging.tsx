@@ -181,7 +181,7 @@ const ICPackaging = () => {
           <div className="w-11/12 mx-auto">
             <div className=" w-full">
               <Image
-                src="/images/ic-packaging.png"
+                src="/images/svg/IC-img.svg"
                 className="rounded-2xl"
                 width={1300}
                 height={545}

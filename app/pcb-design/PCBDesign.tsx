@@ -53,7 +53,7 @@ const PCBDesignPage = () => {
 
           <div className="w-full ">
             <Image
-              src="/images/pcb-design.png"
+              src="/images/svg/pcb-img.svg"
               alt="pcb design"
               className="rounded-[19px]"
               width={1300}
