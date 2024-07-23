@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import { FaAngleRight } from 'react-icons/fa';
 
@@ -24,7 +25,7 @@ const ServicesSection = () => {
       id: 3,
       title: 'Testing',
       desc: 'Breathe new life into your PCBs with our expert rework and repair services.',
-      url: '',
+      url: '/testing',
       img: '/images/service-Img3.svg',
       serviceIcon: '/images/service-3.svg',
     },
@@ -49,7 +50,7 @@ const ServicesSection = () => {
           </p>
           <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-[30px]">
             {services.map((service) => {
-              const { id, img, title, desc, serviceIcon } = service;
+              const { id, img, title, desc, serviceIcon, url } = service;
               return (
                 <div key={id}>
                   <div>
@@ -80,9 +81,12 @@ const ServicesSection = () => {
                       {desc}
                     </p>
                     <div className="flex items-center gap-[24px] mt-[10px]">
-                      <button className="border-proOrange border  rounded lg:px-[24px] px-4 py-[10px] font-semibold text-base text-proOrange flex items-center gap-2">
+                      <Link
+                        href={url}
+                        className="border-proOrange border  rounded lg:px-[24px] px-4 py-[10px] font-semibold text-base text-proOrange flex items-center gap-2"
+                      >
                         Learn More <FaAngleRight />
-                      </button>
+                      </Link>
                     </div>
                   </div>
                 </div>

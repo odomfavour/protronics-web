@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'PCB Testing - Protronics Inc.',
   description:
     'The quick turn EMS, PCB Design, PCB assembly and IC packaging specialist',
-}
+};
 
 const Page = () => {
   return (
