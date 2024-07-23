@@ -1,14 +1,14 @@
-import { companyLinks, industrySolutions, proProducts } from "@/app/utils/data";
-import Image from "next/image";
-import Link from "next/link";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { companyLinks, industrySolutions, proProducts } from '@/app/utils/data';
+import Image from 'next/image';
+import Link from 'next/link';
+import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
   return (
     <footer className="bg-proDark py-10">
-      <div className="max-w-[1440px] w-11/12 mx-auto">
-        <div className="flex gap-6 md:flex-row flex-col">
+      <div className="max-w-[1440px] mx-auto">
+        <div className="flex w-11/12 mx-auto gap-6 md:flex-row flex-col">
           <div className="lg:w-2/5 w-full">
             <div className="lg:w-3/5 w-full">
               <Image
@@ -23,28 +23,40 @@ const Footer = () => {
               </p>
               <ul className="flex gap-6">
                 <li>
-                  <Link href="https://www.facebook.com/ProTronicsInc" className="text-[#D0D5DD] font-medium">
+                  <Link
+                    href="https://www.facebook.com/ProTronicsInc"
+                    className="text-[#D0D5DD] font-medium"
+                  >
                     <div className="rounded-full h-6 w-6 bg-proOrange flex items-center justify-center">
                       <FaFacebook />
                     </div>
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://x.com" className="text-[#D0D5DD] font-medium">
+                  <Link
+                    href="https://x.com"
+                    className="text-[#D0D5DD] font-medium"
+                  >
                     <div className="rounded-full h-6 w-6 bg-proOrange  flex items-center justify-center">
                       <FaXTwitter />
                     </div>
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://instagram.com" className="text-[#D0D5DD] font-medium">
+                  <Link
+                    href="https://instagram.com"
+                    className="text-[#D0D5DD] font-medium"
+                  >
                     <div className="rounded-full h-6 w-6 bg-proOrange  flex items-center justify-center">
                       <FaInstagram />
                     </div>
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://www.linkedin.com/company/protronics-incorporated" className="text-[#D0D5DD] font-medium">
+                  <Link
+                    href="https://www.linkedin.com/company/protronics-incorporated"
+                    className="text-[#D0D5DD] font-medium"
+                  >
                     <div className="rounded-full h-6 w-6 bg-proOrange  flex items-center justify-center">
                       <FaLinkedin />
                     </div>
