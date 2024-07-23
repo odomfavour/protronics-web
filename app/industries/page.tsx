@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Industries - Protronics Inc.',
   description:
     'The quick turn EMS, PCB Design, PCB assembly and IC packaging specialist',
-}
+};
 
 const IndustriesPage = () => {
   const industries = [
@@ -15,25 +15,25 @@ const IndustriesPage = () => {
       id: 1,
       image: '/images/aero-ind.png',
       title: 'Aerospace & Defense',
-      desc: '100% inspection to IPC-A-610 criteria using X-Ray and semi-automated optical inspection. 100% inspection to IPC-A-610 criteria using X-Ray and semi-automated optical inspection.',
+      desc: 'Protronics as an EMS provider offers comprehensive solutions, including design, assembly, testing, and maintenance of aerospace and defense electronic systems, ensuring they meet stringent industry standards for performance and durability.',
     },
     {
       id: 2,
       image: '/images/health-ind.png',
       title: 'Health Care',
-      desc: '100% inspection to IPC-A-610 criteria using X-Ray and semi-automated optical inspection. 100% inspection to IPC-A-610 criteria using X-Ray and semi-automated optical inspection.',
+      desc: 'EMS providers offer comprehensive solutions, from design and prototyping to full-scale production and testing, ensuring that medical devices meet strict regulatory standards and deliver high-quality, dependable results.',
     },
     {
       id: 3,
       image: '/images/mask-ind.png',
       title: 'Telecom',
-      desc: '100% inspection to IPC-A-610 criteria using X-Ray and semi-automated optical inspection. 100% inspection to IPC-A-610 criteria using X-Ray and semi-automated optical inspection.',
+      desc: 'Protronics offers specialized services such as design, prototyping, assembly, testing, and logistics, enabling IT and telecommunications companies to focus on innovation and market deployment.',
     },
     {
       id: 4,
       image: '/images/lab-ind.png',
       title: 'Industrial',
-      desc: '100% inspection to IPC-A-610 criteria using X-Ray and semi-automated optical inspection. 100% inspection to IPC-A-610 criteria using X-Ray and semi-automated optical inspection.',
+      desc: 'Our PCBs can be designed to meet the specific needs of industrial applications, providing tailored solutions for complex machinery and control systems.',
     },
   ];
   return (
@@ -53,8 +53,10 @@ const IndustriesPage = () => {
                   Industries
                 </p>
                 <p className="text-lg font-normal text-center lg:text-left text-black mb-12">
-                  We are trusted by companies, both big and small that rely on
-                  quality services.
+                  As a leading EMS provider, Protronics Inc. is the trusted
+                  partner for companies of all sizes across diverse industries,
+                  delivering rapid turnaround and premium-quality PCBs to meet
+                  their critical needs.
                 </p>
               </div>
             </div>

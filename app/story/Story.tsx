@@ -74,7 +74,7 @@ const StoryPage = () => {
               </p>
               <p className="lg:text-lg text-base font-normal text-[#101928] mb-5">
                 At Protronics, we are dedicated to providing complete solutions
-                that meet the changing needs of our customers' new product
+                that meet the changing needs of our customers&rsquo; new product
                 introductions and developments. Our story is one of continuous
                 growth, improvement, and a strong commitment to being the best
                 in the industry.
