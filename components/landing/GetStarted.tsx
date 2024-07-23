@@ -36,7 +36,7 @@ const GetStarted = () => {
                 width={16}
                 height={16}
               />
-              <p>+1 2345 56768</p>
+              <p>+1 919-217-0007</p>
             </div>
             <div className="flex gap-1 items-center">
               <Image

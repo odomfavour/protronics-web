@@ -23,11 +23,23 @@ import 'swiper/css/autoplay';
 const equipments = [
   {
     title: 'Surface Mount Technologies (SMT)',
-    image: '/images/assembly-1.svg',
+    image: '/images/BGA Rework Station-ZM-R8650.png',
   },
   {
     title: 'Surface Mount Technologies (SMT)”',
-    image: '/images/assembly-2.svg',
+    image: '/images/LS60V-DDM-Novastar.png',
+  },
+  {
+    title: 'Surface Mount Technologies (SMT)”',
+    image: '/images/pcb-xray-inspection.png',
+  },
+  {
+    title: 'Surface Mount Technologies (SMT)”',
+    image: '/images/reflow-oven.png',
+  },
+  {
+    title: 'Surface Mount Technologies (SMT)”',
+    image: '/images/Selective-Wave-(RoHS and SnPB).png',
   },
 ];
 
@@ -75,16 +87,9 @@ const StoryPage = () => {
               <div className="flex items-center gap-4 ">
                 <Link
                   href="/quote"
-                  className="bg-proOrange w-[141px] flex items-center justify-center rounded-[8px] p-[16px] font-semibold text-sm lg:text-base text-white"
+                  className="bg-proOrange w-full flex items-center justify-center rounded-[8px] p-[16px] font-semibold text-sm lg:text-base text-white"
                 >
                   Get a quote
-                </Link>
-                <Link
-                  href="/"
-                  className="text-proOrange text-sm lg:text-base justify-center  w-[152px] border-[1.5px] p-[15px] rounded-[8px] border-[#034592] flex items-center gap-3"
-                >
-                  Learn More
-                  <SlArrowRight />
                 </Link>
               </div>
             </div>
@@ -205,23 +210,23 @@ const StoryPage = () => {
                     <SwiperSlide key={index}>
                       <div>
                         <div className="flex items-center justify-between">
-                          <div className="w-full">
+                          <div className="w-full relative h-[400px]">
                             <Image
                               src={equipment.image}
                               className=" w-full"
-                              width={500}
-                              height={500}
-                              // fill={true}
-                              // style={{ objectFit: "cover" }}
+                              // width={500}
+                              // height={500}
+                              fill={true}
+                              style={{ objectFit: 'contain' }}
                               alt="product image"
                             />
                           </div>
                         </div>
-                        <div className="py-3">
+                        {/* <div className="py-3">
                           <p className="font-bold text-black lg:text-[32px] text-lg">
                             {equipment.title}
                           </p>
-                        </div>
+                        </div> */}
                       </div>
                     </SwiperSlide>
                   ))}

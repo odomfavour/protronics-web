@@ -18,6 +18,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/autoplay';
+import Link from 'next/link';
 
 const HeroSection = () => {
   const heroSlides = [
@@ -70,12 +71,12 @@ const HeroSection = () => {
                     {slide.subtitle}
                   </h2>
                   <div className="flex items-center lg:gap-[24px] gap-4 mt-[20px]">
-                    <button className="bg-proOrange rounded lg:px-[24px] px-4 py-[10px] font-semibold text-base text-white">
+                    <Link
+                      href="/quote"
+                      className="bg-proOrange rounded lg:px-[24px] px-4 py-[10px] font-semibold text-base text-white"
+                    >
                       Get a quote
-                    </button>
-                    <button className="border-proOrange border rounded lg:px-[24px] px-4 py-[10px] font-semibold text-base text-proOrange flex items-center gap-2">
-                      Learn More <FaAngleRight />
-                    </button>
+                    </Link>
                   </div>
                 </div>
                 <div className="lg:w-2/3 w-full flex justify-end">
