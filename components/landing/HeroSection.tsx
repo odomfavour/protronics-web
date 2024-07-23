@@ -25,7 +25,7 @@ const HeroSection = () => {
     {
       title: 'Experience Seamless PCB Solutions',
       subtitle: 'We offer precision craftsmanship everytime.',
-      image: '/images/hero-img.svg',
+      image: '/images/svg/hero-img.svg',
       quoteText: 'Get a quote',
       learnMoreText: 'Learn More',
     },
@@ -79,7 +79,7 @@ const HeroSection = () => {
                 <div className="lg:w-2/3 w-full flex justify-end">
                   <div className="h-[398px] md:w-[428px] w-full relative">
                     <Image
-                      src="/images/svg/hero-img.svg"
+                      src={slide.image}
                       className=" object-contain object-center rounded-2xl"
                       fill={true}
                       style={{ objectFit: 'contain' }}
