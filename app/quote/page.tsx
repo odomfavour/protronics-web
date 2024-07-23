@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Quote - Protronics Inc.',
   description:
     'The quick turn EMS, PCB Design, PCB assembly and IC packaging specialist',
-}
+};
 
 const page = () => {
   return (
@@ -35,7 +35,7 @@ const page = () => {
                   <div className="h-[48px] w-[48px] flex items-center text-proOrange justify-center rounded-full bg-[#FFF4F0]">
                     <LuPhone />
                   </div>
-                  <p>Support: (+21) 123 456 7890</p>
+                  <p>Support: +1 919-217-0007</p>
                 </div>
               </div>
             </div>

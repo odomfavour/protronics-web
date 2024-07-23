@@ -158,20 +158,6 @@ const ICPackaging = () => {
             <p className="lg:text-2xl text-base font-normal">
               Discover our expertise in PCB Design.
             </p>
-            <p className="lg:text-xl text-lg font-normal my-[35px]">
-              Protronics Packaging services include microelectronics and optics
-              assembly and packaging. Our prototyping Foundry uses methods
-              ranging from 2D die attach and wire bond assembly to multiple 2.5D
-              and 3D integration schemes. Our wirebonding capabilities include
-              manual and automated wedge and ball wirebonders and pull testers.
-              Our 2.5D packaging platforms include large-format interposers for
-              integration. Our 3D integration technologies range from die
-              stacking and flip-chip bump bonding to advanced integration
-              technologies utilizing through-silicon vias or wafer bonding with
-              high-density, low-capacitance interconnects. Performance needs,
-              form factor, security, and cost all play a role in deciding which
-              approach to use.
-            </p>
           </div>
         </div>
       </div>
@@ -188,6 +174,20 @@ const ICPackaging = () => {
                 alt="product image"
               />
             </div>
+            <p className="lg:text-xl text-lg font-normal my-[35px]">
+              Protronics Packaging services include microelectronics and optics
+              assembly and packaging. Our prototyping Foundry uses methods
+              ranging from 2D die attach and wire bond assembly to multiple 2.5D
+              and 3D integration schemes. Our wirebonding capabilities include
+              manual and automated wedge and ball wirebonders and pull testers.
+              Our 2.5D packaging platforms include large-format interposers for
+              integration. Our 3D integration technologies range from die
+              stacking and flip-chip bump bonding to advanced integration
+              technologies utilizing through-silicon vias or wafer bonding with
+              high-density, low-capacitance interconnects. Performance needs,
+              form factor, security, and cost all play a role in deciding which
+              approach to use.
+            </p>
           </div>
         </div>
       </div>
