@@ -28,13 +28,25 @@ const page = () => {
                   <div className="h-[48px] w-[48px] flex items-center text-proOrange justify-center rounded-full bg-[#FFF4F0]">
                     <FaRegEnvelope />
                   </div>
-                  <p>sales@protronics-inc.com</p>
+
+                  <a
+                    href="mailto:sales@protronics-inc.com"
+                    className="text-blue-500 underline block"
+                  >
+                    sales@protronics-inc.com
+                  </a>
                 </div>
                 <div className="flex items-center gap-3 mb-3">
                   <div className="h-[48px] w-[48px] flex items-center text-proOrange justify-center rounded-full bg-[#FFF4F0]">
                     <LuPhone />
                   </div>
-                  <p>Support: +1 919-217-0007</p>
+
+                  <a
+                    href="tel:+19192170007"
+                    className="text-blue-500 underline block"
+                  >
+                    Support: +1 919-217-0007
+                  </a>
                 </div>
               </div>
             </div>

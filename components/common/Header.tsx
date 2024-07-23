@@ -1,14 +1,14 @@
-"use client";
-import React, { useState, useEffect, useRef } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { navLinks } from "@/app/utils/data";
-import { usePathname } from "next/navigation";
-import { FaChevronDown } from "react-icons/fa";
-import { FaX } from "react-icons/fa6";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+'use client';
+import React, { useState, useEffect, useRef } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import { navLinks } from '@/app/utils/data';
+import { usePathname } from 'next/navigation';
+import { FaChevronDown } from 'react-icons/fa';
+import { FaX } from 'react-icons/fa6';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 
 const Header = () => {
   const pathname = usePathname();
@@ -27,10 +27,10 @@ const Header = () => {
     };
 
     handleResize(); // Check initial screen size
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
 
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
@@ -70,9 +70,9 @@ const Header = () => {
       }
     };
 
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener('mousedown', handleClickOutside);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
 
@@ -99,7 +99,9 @@ const Header = () => {
                     width={16}
                     height={16}
                   />
-                  <a className="text-nowrap" href="tel:+19192170007">+1 919-217-0007</a>
+                  <a className="text-nowrap" href="tel:+19192170007">
+                    +1 919-217-0007
+                  </a>
                 </div>
               </div>
               <div className="flex mx-auto gap-[16px]">
@@ -111,34 +113,51 @@ const Header = () => {
                     width={16}
                     height={16}
                   />
-                  <p className="text-nowrap">sales@protronics-inc.com</p>
+                  <a
+                    className="text-nowrap"
+                    href="mail:sales@protronics-inc.com"
+                  >
+                    sales@protronics-inc.com
+                  </a>
                 </div>
               </div>
               <div className="lg:ml-auto">
                 <ul className="flex gap-6">
                   <li>
-                    <Link href="https://www.facebook.com/ProTronicsInc" className="text-[#D0D5DD] font-medium">
+                    <Link
+                      href="https://www.facebook.com/ProTronicsInc"
+                      className="text-[#D0D5DD] font-medium"
+                    >
                       <div className="rounded-full h-6 w-6 bg-proOrange flex items-center justify-center">
                         <FaFacebook />
                       </div>
                     </Link>
                   </li>
                   <li>
-                    <Link href="https://x.com/" className="text-[#D0D5DD] font-medium">
+                    <Link
+                      href="https://x.com/"
+                      className="text-[#D0D5DD] font-medium"
+                    >
                       <div className="rounded-full h-6 w-6 bg-proOrange  flex items-center justify-center">
                         <FaXTwitter />
                       </div>
                     </Link>
                   </li>
                   <li>
-                    <Link href="https://instagram.com/" className="text-[#D0D5DD] font-medium">
+                    <Link
+                      href="https://instagram.com/"
+                      className="text-[#D0D5DD] font-medium"
+                    >
                       <div className="rounded-full h-6 w-6 bg-proOrange  flex items-center justify-center">
                         <FaInstagram />
                       </div>
                     </Link>
                   </li>
                   <li>
-                    <Link href="https://www.linkedin.com/company/protronics-incorporated" className="text-[#D0D5DD] font-medium">
+                    <Link
+                      href="https://www.linkedin.com/company/protronics-incorporated"
+                      className="text-[#D0D5DD] font-medium"
+                    >
                       <div className="rounded-full h-6 w-6 bg-proOrange  flex items-center justify-center">
                         <FaLinkedin />
                       </div>
@@ -173,8 +192,8 @@ const Header = () => {
                           className={`text-base text-[#101928] font-normal  flex items-center ${
                             pathname === itemLink.url ||
                             activeParent === itemLink.id
-                              ? "font-semibold"
-                              : "font-normal"
+                              ? 'font-semibold'
+                              : 'font-normal'
                           }`}
                           onClick={() => handleDropdown(itemLink.id)}
                         >
@@ -183,8 +202,8 @@ const Header = () => {
                             <span
                               className={`ml-2 transform transition-transform ${
                                 openDropdown === itemLink.id
-                                  ? "rotate-180"
-                                  : "rotate-0"
+                                  ? 'rotate-180'
+                                  : 'rotate-0'
                               }`}
                             >
                               <FaChevronDown />
@@ -209,7 +228,7 @@ const Header = () => {
                                 onClick={closeDropdown}
                               >
                                 <div className="flex items-center gap-3">
-                                  <div className="h-[8px] w-[8px] rounded-full bg-[#98A2B3]" />{" "}
+                                  <div className="h-[8px] w-[8px] rounded-full bg-[#98A2B3]" />{' '}
                                   {subLink.name}
                                 </div>
                               </Link>
@@ -279,8 +298,8 @@ const Header = () => {
                       className={`text-base text-[#101928] font-normal pb-2 flex items-center ${
                         pathname === itemLink.url ||
                         activeParent === itemLink.id
-                          ? "font-semibold"
-                          : "font-normal"
+                          ? 'font-semibold'
+                          : 'font-normal'
                       }`}
                       onClick={() => handleDropdown(itemLink.id)}
                     >
@@ -289,8 +308,8 @@ const Header = () => {
                         <span
                           className={`ml-2 transform transition-transform ${
                             openDropdown === itemLink.id
-                              ? "rotate-180"
-                              : "rotate-0"
+                              ? 'rotate-180'
+                              : 'rotate-0'
                           }`}
                         >
                           <FaChevronDown />
@@ -316,7 +335,7 @@ const Header = () => {
                             onClick={closeMobileMenu}
                           >
                             <div className="flex items-center gap-3">
-                              <div className="h-[8px] w-[8px] rounded-full bg-[#98A2B3]" />{" "}
+                              <div className="h-[8px] w-[8px] rounded-full bg-[#98A2B3]" />{' '}
                               {subLink.name}
                             </div>
                           </Link>
