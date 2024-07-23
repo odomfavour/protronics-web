@@ -44,24 +44,33 @@ const StoryPage = () => {
           <div className="flex md:flex-row flex-col-reverse  gap-10 pt-[80px] pb-10">
             <div className="lg:w-3/5 w-full">
               <p className="lg:text-lg text-base font-normal text-[#101928] mb-5">
-                Welcome to ProTronics Inc., where dedication meets innovation in
-                PCB assembly. With over 20 years of industry expertise, we have
-                been a trusted partner to businesses across the globe.
+                Protronics has been a leader in quick-turn contract
+                manufacturing for over thirty years. We started with a mission
+                to deliver top-quality and fast services to different
+                industries, including electronics, commercial, military, medical
+                devices, and semiconductors. Our journey is marked by a strong
+                commitment to innovation, excellence, and customer satisfaction.
               </p>
               <p className="lg:text-lg text-base font-normal text-[#101928] mb-5">
-                Our commitment to quality, reliability, and customer
-                satisfaction drives us to deliver tailored PCB assembly
-                solutions that exceed expectations
+                Recently, Protronics entered a new phase with a change in
+                ownership. Despite this change, our core values and mission stay
+                the same. Under the leadership of our current CEO, Quadri
+                Oguntade, we continue to build on our 31-year legacy of
+                delivering great value to our customers. We specialize in
+                quick-turn PCB assembly, and we are expanding our services to
+                include full PCB design, assembly, testing, and IC packaging.
               </p>
               <p className="lg:text-lg text-base font-normal text-[#101928] mb-5">
-                Whether you&apos;re a startup exploring new frontiers or an
-                established enterprise seeking to optimize efficiency,
-                ProTronics is here to partner with you every step of the way.
+                At Protronics, we are dedicated to providing complete solutions
+                that meet the changing needs of our customers' new product
+                introductions and developments. Our story is one of continuous
+                growth, improvement, and a strong commitment to being the best
+                in the industry.
               </p>
-              <p className="lg:text-lg text-base font-normal text-[#101928] mb-5">
+              {/* <p className="lg:text-lg text-base font-normal text-[#101928] mb-5">
                 Discover how our passion for precision and our dedication to
                 innovation can elevate your electronics manufacturing experience
-              </p>
+              </p> */}
 
               <div className="flex items-center gap-4 ">
                 <Link
@@ -208,7 +217,7 @@ const StoryPage = () => {
                             />
                           </div>
                         </div>
-                        <div className="mt-3">
+                        <div className="py-3">
                           <p className="font-bold text-black lg:text-[32px] text-lg">
                             {equipment.title}
                           </p>
