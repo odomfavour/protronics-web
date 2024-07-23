@@ -7,7 +7,6 @@ import ServicesSection from '@/components/landing/ServicesSection';
 import SubscribeSection from '@/components/landing/SubscribeSection';
 import TestimonialSection from '@/components/landing/TestimonialSection';
 import WhySection from '@/components/landing/WhySection';
-import Image from 'next/image';
 
 export default function Home() {
   return (

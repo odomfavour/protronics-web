@@ -22,15 +22,25 @@ import 'swiper/css/autoplay';
 const HeroSection = () => {
   const heroSlides = [
     {
-      title: 'Experience Seamless PCB Solutions',
-      subtitle: 'We offer precision craftsmanship everytime.',
+      title: 'Rapid Prototyping, Accelerated New Product Innovation',
+      subtitle:
+        'Streamline your product development with our fast-paced prototyping and iterative design cycles.',
+      image: '/images/pcb-design-hero.png',
+      quoteText: 'Get a quote',
+      learnMoreText: 'Learn More',
+    },
+    {
+      title: 'Seamless PCB Design and Assembly',
+      subtitle:
+        'We deliver flawless PCB assembly, ensuring your designs are brought to life with the utmost precision and care.',
       image: '/images/hero-pic.svg',
       quoteText: 'Get a quote',
       learnMoreText: 'Learn More',
     },
     {
-      title: 'Innovative Design and Engineering',
-      subtitle: 'Your vision, our expertise.',
+      title: 'Revive Your Electronics with Our Quality EMS',
+      subtitle:
+        'Our expert rework and repair services will breathe new life into your circuit boards, restoring them to peak performance.',
       image: '/images/hero-pic.svg',
       quoteText: 'Get a quote',
       learnMoreText: 'Learn More',
@@ -52,13 +62,13 @@ const HeroSection = () => {
             <SwiperSlide key={index}>
               <div className="flex lg:flex-row flex-col items-center lg:pt-[60px] pt-[30px]">
                 <div className="lg:w-2/3 w-full">
-                  <p className="lg:text-[56px] text-3xl font-bold lg:leading-[84px]">
+                  <h1 className="lg:text-[56px] text-3xl font-bold lg:leading-[60px]">
                     {slide.title}
-                  </p>
-                  <p className="lg:mt-[24px] mt-4 text-[#1D2739] lg:text-2xl text-lg">
+                  </h1>
+                  <h2 className="lg:mt-[24px] mt-4 text-[#1D2739] lg:text-xl text-md">
                     {' '}
                     {slide.subtitle}
-                  </p>
+                  </h2>
                   <div className="flex items-center lg:gap-[24px] gap-4 mt-[20px]">
                     <button className="bg-proOrange rounded lg:px-[24px] px-4 py-[10px] font-semibold text-base text-white">
                       Get a quote
@@ -71,7 +81,7 @@ const HeroSection = () => {
                 <div className="lg:w-2/3 w-full flex justify-end">
                   <div className="h-[398px] md:w-[428px] w-full relative">
                     <Image
-                      src="/images/hero-pic.svg"
+                      src="/images/svg/hero-img.svg"
                       className=" object-contain object-center rounded-2xl"
                       fill={true}
                       style={{ objectFit: 'contain' }}

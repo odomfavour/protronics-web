@@ -1,6 +1,13 @@
 import GetStarted from '@/components/landing/GetStarted';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import React from 'react';
+
+export const metadata: Metadata = {
+  title: 'Industries - Protronics Inc.',
+  description:
+    'The quick turn EMS, PCB Design, PCB assembly and IC packaging specialist',
+}
 
 const IndustriesPage = () => {
   const industries = [

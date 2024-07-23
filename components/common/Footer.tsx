@@ -1,7 +1,6 @@
 import { companyLinks, industrySolutions, proProducts } from "@/app/utils/data";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
@@ -24,28 +23,28 @@ const Footer = () => {
               </p>
               <ul className="flex gap-6">
                 <li>
-                  <Link href="#" className="text-[#D0D5DD] font-medium">
+                  <Link href="https://www.facebook.com/ProTronicsInc" className="text-[#D0D5DD] font-medium">
                     <div className="rounded-full h-6 w-6 bg-proOrange flex items-center justify-center">
                       <FaFacebook />
                     </div>
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-[#D0D5DD] font-medium">
+                  <Link href="https://x.com" className="text-[#D0D5DD] font-medium">
                     <div className="rounded-full h-6 w-6 bg-proOrange  flex items-center justify-center">
                       <FaXTwitter />
                     </div>
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-[#D0D5DD] font-medium">
+                  <Link href="https://instagram.com" className="text-[#D0D5DD] font-medium">
                     <div className="rounded-full h-6 w-6 bg-proOrange  flex items-center justify-center">
                       <FaInstagram />
                     </div>
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-[#D0D5DD] font-medium">
+                  <Link href="https://www.linkedin.com/company/protronics-incorporated" className="text-[#D0D5DD] font-medium">
                     <div className="rounded-full h-6 w-6 bg-proOrange  flex items-center justify-center">
                       <FaLinkedin />
                     </div>

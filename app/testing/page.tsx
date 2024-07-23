@@ -1,9 +1,12 @@
-'use client';
-import HeaderBar from '@/components/common/HeaderBar';
-import PcbAssemblyTab from '@/components/services/PcbAssemblyTab';
 import TestingTab from '@/components/services/TestingTab';
-import Image from 'next/image';
-import React, { useState } from 'react';
+import { Metadata } from 'next';
+import React from 'react';
+
+export const metadata: Metadata = {
+  title: 'PCB Testing - Protronics Inc.',
+  description:
+    'The quick turn EMS, PCB Design, PCB assembly and IC packaging specialist',
+}
 
 const Page = () => {
   return (

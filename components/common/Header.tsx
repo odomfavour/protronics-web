@@ -99,7 +99,7 @@ const Header = () => {
                     width={16}
                     height={16}
                   />
-                  <p className="text-nowrap">+1 2345 56768</p>
+                  <a className="text-nowrap" href="tel:+19192170007">+1 919-217-0007</a>
                 </div>
               </div>
               <div className="flex mx-auto gap-[16px]">
@@ -117,28 +117,28 @@ const Header = () => {
               <div className="lg:ml-auto">
                 <ul className="flex gap-6">
                   <li>
-                    <Link href="#" className="text-[#D0D5DD] font-medium">
+                    <Link href="https://www.facebook.com/ProTronicsInc" className="text-[#D0D5DD] font-medium">
                       <div className="rounded-full h-6 w-6 bg-proOrange flex items-center justify-center">
                         <FaFacebook />
                       </div>
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="text-[#D0D5DD] font-medium">
+                    <Link href="https://x.com/" className="text-[#D0D5DD] font-medium">
                       <div className="rounded-full h-6 w-6 bg-proOrange  flex items-center justify-center">
                         <FaXTwitter />
                       </div>
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="text-[#D0D5DD] font-medium">
+                    <Link href="https://instagram.com/" className="text-[#D0D5DD] font-medium">
                       <div className="rounded-full h-6 w-6 bg-proOrange  flex items-center justify-center">
                         <FaInstagram />
                       </div>
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="text-[#D0D5DD] font-medium">
+                    <Link href="https://www.linkedin.com/company/protronics-incorporated" className="text-[#D0D5DD] font-medium">
                       <div className="rounded-full h-6 w-6 bg-proOrange  flex items-center justify-center">
                         <FaLinkedin />
                       </div>
