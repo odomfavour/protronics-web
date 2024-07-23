@@ -7,17 +7,17 @@ const IndustriesPage = () => {
     {
       id: 1,
       title: 'Power & Energy System',
-      desc: '100% inspection to IPC-A-610 criteria using X-Ray and semi-automated optical inspection. 100% inspection to IPC-A-610 criteria using X-Ray and semi-automated optical inspection.',
+      desc: 'Protronics quickturn PCBs are used in the integration of smart grid technology for real-time monitoring and control of electrical networks, and also to create inverters and converters to change the form of electricity, such as converting DC to AC or vice versa.',
     },
     {
       id: 2,
       title: 'HVAC',
-      desc: '100% inspection to IPC-A-610 criteria using X-Ray and semi-automated optical inspection. 100% inspection to IPC-A-610 criteria using X-Ray and semi-automated optical inspection.',
+      desc: 'Protronics designed and manufactured custom PCBs used to support sensors & actuators, thermostats, communication modules, and control units for efficient operation of HVAC systems.',
     },
     {
       id: 3,
       title: 'Battery Monitoring System',
-      desc: '100% inspection to IPC-A-610 criteria using X-Ray and semi-automated optical inspection. 100% inspection to IPC-A-610 criteria using X-Ray and semi-automated optical inspection.',
+      desc: 'Our PCB assembly was trusted for the production of BMS to monitor and manage the charge and discharge of batteries, ensuring safety and efficiency in energy storage systems.',
     },
   ];
   return (
@@ -37,8 +37,9 @@ const IndustriesPage = () => {
                   Applications
                 </p>
                 <p className="text-lg font-normal text-black mb-12">
-                  We are trusted by companies, both big and small that rely on
-                  quality services.
+                  PCBs designed, developed, and assembled by Protronics have
+                  been used in a wide range of applications across various
+                  industries.
                 </p>
               </div>
             </div>
