@@ -1,6 +1,22 @@
-import React from "react";
+'use client';
+import React, { useRef, ChangeEvent } from 'react';
 
-const QuoteForm = () => {
+const QuoteForm: React.FC = () => {
+  const fileInputRef = useRef<HTMLInputElement | null>(null);
+
+  const handleFileUpload = () => {
+    if (fileInputRef.current) {
+      fileInputRef.current.click();
+    }
+  };
+
+  const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {
+    const files = event.target.files;
+    if (files && files.length > 0) {
+      // Handle file upload logic here
+      console.log('Selected files:', files);
+    }
+  };
   return (
     <section>
       <form action="">
@@ -42,7 +58,34 @@ const QuoteForm = () => {
             </div>
             <div className="flex items-center me-4">
               <input
-                checked
+                id="inline-2-checkbox"
+                type="checkbox"
+                value=""
+                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 "
+              />
+              <label
+                htmlFor="inline-2-checkbox"
+                className="ms-2 text-sm font-medium text-nowrap text-gray-900"
+              >
+                PCB Design
+              </label>
+            </div>
+            <div className="flex items-center me-4">
+              <input
+                id="inline-2-checkbox"
+                type="checkbox"
+                value=""
+                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 "
+              />
+              <label
+                htmlFor="inline-2-checkbox"
+                className="ms-2 text-sm font-medium text-nowrap text-gray-900"
+              >
+                IC Packaging
+              </label>
+            </div>
+            <div className="flex items-center me-4">
+              <input
                 id="inline-checked-checkbox"
                 type="checkbox"
                 value=""
@@ -95,7 +138,6 @@ const QuoteForm = () => {
             </div>
             <div className="flex items-center me-4">
               <input
-                checked
                 id="inline-checked-checkbox"
                 type="checkbox"
                 value=""
@@ -205,7 +247,7 @@ const QuoteForm = () => {
                 htmlFor="inline-checkbox"
                 className="ms-2 text-sm font-medium text-nowrap text-gray-900 "
               >
-                Quick Turn 
+                Quick Turn
                 <span> ( 1 - 3 days)</span>
               </label>
             </div>
@@ -396,29 +438,40 @@ const QuoteForm = () => {
           ></textarea>
         </div>
         <div className="mb-4">
-          <button className="bg-white rounded px-[24px] py-[10px] font-semibold text-base text-black">
-            upload File
+          <button
+            type="button"
+            onClick={handleFileUpload}
+            className="bg-white rounded px-[24px] py-[10px] font-semibold text-base text-black"
+          >
+            Upload File
           </button>
+          <input
+            type="file"
+            ref={fileInputRef}
+            onChange={handleFileChange}
+            style={{ display: 'none' }}
+            multiple
+          />
         </div>
         <ul className="flex gap-3 my-4 flex-wrap">
           <li className="flex gap-2 items-center text-sm">
             <div className="h-[6px] w-[6px] rounded-full bg-proOrange" />
-            Bill of materials.{" "}
+            Bill of materials.{' '}
           </li>
           <li className="flex gap-2 items-center  text-sm">
-            {" "}
+            {' '}
             <div className="h-[6px] w-[6px] rounded-full bg-proOrange" />
             Gerber Files
           </li>
           <li className="flex gap-2 items-center  text-sm">
-            {" "}
+            {' '}
             <div className="h-[6px] w-[6px] rounded-full bg-proOrange" />
-            Pick & Place Drawing{" "}
+            Pick & Place Drawing{' '}
           </li>
           <li className="flex gap-2 items-center  text-sm">
-            {" "}
+            {' '}
             <div className="h-[6px] w-[6px] rounded-full bg-proOrange" />
-            Assembly Drawing.{" "}
+            Assembly Drawing.{' '}
           </li>
         </ul>
         <div>
