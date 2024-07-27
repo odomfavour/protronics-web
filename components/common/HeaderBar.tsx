@@ -17,12 +17,12 @@ const HeaderBar: React.FC<HeaderBarProps> = ({
 }) => {
   return (
     <div className={`border-black ${border} `}>
-      <div className={`text-center py-10  lg:w-[635px] mx-auto `}>
-        <p
+      <div className="text-center py-10 max-w-3xl mx-auto">
+        <h1
           className={`lg:text-[56px] leading-[56px] text-3xl font-bold mb-4 ${titleColor}`}
         >
           {title}
-        </p>
+        </h1>
         <p className={`lg:text-xl  text-lg font-normal ${subtitleColor}`}>
           {subtitle}
         </p>

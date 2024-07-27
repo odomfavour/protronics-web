@@ -1,44 +1,52 @@
-"use client";
-import Image from "next/image";
-import React from "react";
-import { FaAngleRight } from "react-icons/fa";
+'use client';
+import Image from 'next/image';
+import React from 'react';
+import { FaAngleRight } from 'react-icons/fa';
 import {
   Navigation,
   Pagination,
   Scrollbar,
   A11y,
   Autoplay,
-} from "swiper/modules";
+} from 'swiper/modules';
 
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-import "swiper/css/autoplay";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import 'swiper/css/autoplay';
+import Link from 'next/link';
 
 const HeroSection = () => {
   const heroSlides = [
     {
-      title: "Experience Seamless PCB Solutions",
-      subtitle: "We offer precision craftsmanship everytime.",
-      image: "/images/hero-pic.svg",
-      quoteText: "Get a quote",
-      learnMoreText: "Learn More",
+      title: 'Experience Seamless PCB Solutions',
+      subtitle: 'We offer precision craftsmanship everytime.',
+      image: '/images/svg/hero-img.svg',
+      quoteText: 'Get a quote',
+      learnMoreText: 'Learn More',
     },
     {
-      title: "Innovative Design and Engineering",
-      subtitle: "Your vision, our expertise.",
-      image: "/images/hero-pic.svg",
-      quoteText: "Get a quote",
-      learnMoreText: "Learn More",
+      title: 'Innovate Faster with Bespoke PCB Prototypes',
+      subtitle: 'Explore custom PCB Prototypes tailored to your needs.',
+      image: '/images/header-1.svg',
+      quoteText: 'Get a quote',
+      learnMoreText: 'Learn More',
+    },
+    {
+      title: 'Expert PCB Rework & Repair Services Await',
+      subtitle: 'Restore Performance. Renew Confidence.',
+      image: '/images/header-2.svg',
+      quoteText: 'Get a quote',
+      learnMoreText: 'Learn More',
     },
     // Add more slides as needed
   ];
   return (
-    <section className="mt-[150px]">
+    <section className="mt-[150px] max-w-[1440px] mx-auto">
       <div className="w-11/12 mx-auto">
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
@@ -52,29 +60,29 @@ const HeroSection = () => {
             <SwiperSlide key={index}>
               <div className="flex lg:flex-row flex-col items-center lg:pt-[60px] pt-[30px]">
                 <div className="lg:w-2/3 w-full">
-                  <p className="lg:text-[56px] text-3xl font-bold lg:leading-[84px]">
+                  <h1 className="lg:text-[56px] text-3xl font-bold lg:leading-[60px]">
                     {slide.title}
-                  </p>
-                  <p className="lg:mt-[24px] mt-4 text-[#1D2739] lg:text-2xl text-lg">
-                    {" "}
+                  </h1>
+                  <h2 className="lg:mt-[24px] mt-4 text-[#1D2739] lg:text-xl text-md">
+                    {' '}
                     {slide.subtitle}
-                  </p>
+                  </h2>
                   <div className="flex items-center lg:gap-[24px] gap-4 mt-[20px]">
-                    <button className="bg-proOrange rounded lg:px-[24px] px-4 py-[10px] font-semibold text-base text-white">
+                    <Link
+                      href="/quote"
+                      className="bg-proOrange rounded lg:px-[24px] px-4 py-[10px] font-semibold text-base text-white"
+                    >
                       Get a quote
-                    </button>
-                    <button className="border-proOrange border rounded lg:px-[24px] px-4 py-[10px] font-semibold text-base text-proOrange flex items-center gap-2">
-                      Learn More <FaAngleRight />
-                    </button>
+                    </Link>
                   </div>
                 </div>
                 <div className="lg:w-2/3 w-full flex justify-end">
                   <div className="h-[398px] md:w-[428px] w-full relative">
                     <Image
-                      src="/images/hero-pic.svg"
+                      src={slide.image}
                       className=" object-contain object-center rounded-2xl"
                       fill={true}
-                      style={{ objectFit: "contain" }}
+                      style={{ objectFit: 'contain' }}
                       alt="product image"
                     />
                   </div>
