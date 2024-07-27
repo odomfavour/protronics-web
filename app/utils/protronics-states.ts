@@ -18,4 +18,8 @@ export const protronicsStates = {
 	washington: 'Washington, D.C',
   knightdale: 'Knightdale, NC',
 	charlotte: 'Charlotte, NC',
+	seattle: 'Seattle, WA',
+	portland: 'Portland, Oregon',
+	dallas: 'Dallas, TX',
+	phoenix: 'Phoenix, Arizona',
 };

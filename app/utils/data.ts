@@ -1,14 +1,14 @@
 export const navLinks = [
-  { id: 1, name: "Home", url: "/" },
+  { id: 1, name: 'Home', url: '/' },
   {
     id: 2,
-    name: "Our Services",
-    url: "/services",
+    name: 'Our Services',
+    url: '/services',
     children: [
-      { id: "pcb-design", name: "PCB Design", url: "/pcb-design" },
-      { id: "pcb-assembly", name: "PCB Assembly", url: "/pcb-assembly" },
+      { id: 'pcb-design', name: 'PCB Design', url: '/pcb-design' },
+      { id: 'pcb-assembly', name: 'PCB Assembly', url: '/pcb-assembly' },
       // { id: "testing", name: "Testing", url: "/testing" },
-      { id: "ic-packaging", name: "IC Packaging", url: "/ic-packaging" },
+      { id: 'ic-packaging', name: 'IC Packaging', url: '/ic-packaging' },
     ],
   },
   // Removed for now
@@ -24,115 +24,120 @@ export const navLinks = [
   // },
   {
     id: 3,
-    name: "About Us",
-    url: "/story",
+    name: 'About Us',
+    url: '/story',
   },
   {
     id: 4,
-    name: "Resources",
-    url: "/resources",
+    name: 'Resources',
+    url: '/resources',
     children: [
-      { id: "industries", name: "Industries", url: "/industries" },
-      { id: "applications", name: "Applications", url: "/applications" },
+      { id: 'industries', name: 'Industries', url: '/industries' },
+      { id: 'applications', name: 'Applications', url: '/applications' },
       // { id: "quality-systems", name: "Quality Systems", url: "#" },
       // { id: "supply-chain", name: "Supply Chain", url: "#" },
     ],
   },
-  { id: 5, name: "Blog", url: "/blog" },
-  { id: 6, name: "Contact Us", url: "/contact" },
+  { id: 5, name: 'Blog', url: '/blog' },
+  { id: 6, name: 'Contact Us', url: '/contact' },
 ];
 
 export const companyLinks = [
   {
     id: 1,
-    name: "Home",
-    url: "/",
+    name: 'Home',
+    url: '/',
   },
   {
     id: 2,
-    name: "Services",
-    url: "/",
+    name: 'Services',
+    url: '/pcb-design',
   },
   {
     id: 3,
-    name: "About",
-    url: "/",
+    name: 'About',
+    url: '/story',
   },
   {
     id: 4,
-    name: "Contact",
-    url: "/",
+    name: 'Contact',
+    url: '/contact',
   },
   {
     id: 5,
-    name: "Quote",
-    url: "/",
+    name: 'Quote',
+    url: '/quote',
   },
 ];
 
 export const proProducts = [
   {
     id: 1,
-    name: "PCB Circuit Boards",
-    url: "/",
+    name: 'PCB Assembly',
+    url: '/pcb-assembly',
   },
   {
     id: 2,
-    name: "PCA",
-    url: "/",
+    name: 'IC Packaging',
+    url: '/ic-packaging',
   },
   {
     id: 3,
-    name: "PCM",
-    url: "/",
+    name: 'PCB Design',
+    url: '/pcb-design',
+  },
+  {
+    id: 3,
+    name: 'Testing',
+    url: '/testing',
   },
 ];
 
 export const industrySolutions = [
   {
     id: 1,
-    name: "Environmental Testing",
-    url: "/",
+    name: 'Environmental Testing',
+    url: '/',
   },
   {
     id: 2,
-    name: "PCB Inspection",
-    url: "/",
+    name: 'PCB Inspection',
+    url: '/',
   },
   {
     id: 3,
-    name: "Energy & Environment",
-    url: "/",
+    name: 'Energy & Environment',
+    url: '/',
   },
 ];
 
 export const partners = [
   {
     id: 1,
-    logo: "/images/svg/partner1.svg",
+    logo: '/images/svg/partner1.svg',
   },
   {
     id: 2,
-    logo: "/images/svg/partner2.svg",
+    logo: '/images/svg/partner2.svg',
   },
   {
     id: 3,
-    logo: "/images/svg/partner3.svg",
+    logo: '/images/svg/partner3.svg',
   },
   {
     id: 4,
-    logo: "/images/svg/partner4.svg",
+    logo: '/images/svg/partner4.svg',
   },
   {
     id: 5,
-    logo: "/images/svg/partner5.svg",
+    logo: '/images/svg/partner5.svg',
   },
   {
     id: 6,
-    logo: "/images/svg/partner6.svg",
+    logo: '/images/svg/partner6.svg',
   },
   {
     id: 7,
-    logo: "/images/svg/partner7.svg",
+    logo: '/images/svg/partner7.svg',
   },
 ];

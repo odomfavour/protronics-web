@@ -18,30 +18,28 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/autoplay';
+import Link from 'next/link';
 
 const HeroSection = () => {
   const heroSlides = [
     {
-      title: 'Rapid Prototyping, Accelerated New Product Innovation',
-      subtitle:
-        'Streamline your product development with our fast-paced prototyping and iterative design cycles.',
-      image: '/images/pcb-design-hero.png',
+      title: 'Experience Seamless PCB Solutions',
+      subtitle: 'We offer precision craftsmanship everytime.',
+      image: '/images/svg/hero-img.svg',
       quoteText: 'Get a quote',
       learnMoreText: 'Learn More',
     },
     {
-      title: 'Seamless PCB Design and Assembly',
-      subtitle:
-        'We deliver flawless PCB assembly, ensuring your designs are brought to life with the utmost precision and care.',
-      image: '/images/hero-pic.svg',
+      title: 'Innovate Faster with Bespoke PCB Prototypes',
+      subtitle: 'Explore custom PCB Prototypes tailored to your needs.',
+      image: '/images/header-1.svg',
       quoteText: 'Get a quote',
       learnMoreText: 'Learn More',
     },
     {
-      title: 'Revive Your Electronics with Our Quality EMS',
-      subtitle:
-        'Our expert rework and repair services will breathe new life into your circuit boards, restoring them to peak performance.',
-      image: '/images/hero-pic.svg',
+      title: 'Expert PCB Rework & Repair Services Await',
+      subtitle: 'Restore Performance. Renew Confidence.',
+      image: '/images/header-2.svg',
       quoteText: 'Get a quote',
       learnMoreText: 'Learn More',
     },
@@ -70,18 +68,18 @@ const HeroSection = () => {
                     {slide.subtitle}
                   </h2>
                   <div className="flex items-center lg:gap-[24px] gap-4 mt-[20px]">
-                    <button className="bg-proOrange rounded lg:px-[24px] px-4 py-[10px] font-semibold text-base text-white">
+                    <Link
+                      href="/quote"
+                      className="bg-proOrange rounded lg:px-[24px] px-4 py-[10px] font-semibold text-base text-white"
+                    >
                       Get a quote
-                    </button>
-                    <button className="border-proOrange border rounded lg:px-[24px] px-4 py-[10px] font-semibold text-base text-proOrange flex items-center gap-2">
-                      Learn More <FaAngleRight />
-                    </button>
+                    </Link>
                   </div>
                 </div>
                 <div className="lg:w-2/3 w-full flex justify-end">
                   <div className="h-[398px] md:w-[428px] w-full relative">
                     <Image
-                      src="/images/svg/hero-img.svg"
+                      src={slide.image}
                       className=" object-contain object-center rounded-2xl"
                       fill={true}
                       style={{ objectFit: 'contain' }}
