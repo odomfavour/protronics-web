@@ -114,7 +114,7 @@ const Header = () => {
                   <p className="text-nowrap">sales@protronics-inc.com</p>
                 </div>
               </div>
-              <div className="lg:ml-auto">
+              <div className="lg:ml-auto hidden lg:block">
                 <ul className="flex gap-6">
                   <li>
                     <Link href="#" className="text-[#D0D5DD] font-medium">
