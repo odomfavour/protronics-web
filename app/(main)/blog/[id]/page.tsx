@@ -1,6 +1,6 @@
-import HeaderBar from '@/components/common/HeaderBar';
-import Image from 'next/image';
-import React from 'react';
+import HeaderBar from "@/components/common/HeaderBar";
+import Image from "next/image";
+import React from "react";
 
 const page = () => {
   return (
@@ -21,10 +21,10 @@ const page = () => {
           <div className="my-20">
             <div className="image-box h-[500px] relative">
               <Image
-                src="/images/pcb-logos/pcb-xray.svg"
+                src="/images/pcb-logos/pcb-xray.png"
                 className=" object-contain object-center rounded-[10px]"
                 fill={true}
-                style={{ objectFit: 'cover' }}
+                style={{ objectFit: "cover" }}
                 alt="product image"
               />
             </div>
@@ -62,19 +62,19 @@ const page = () => {
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 mb-5">
               <div className="image-box h-[287px] relative">
                 <Image
-                  src="/images/pcb-logos/pcb-xray.svg"
+                  src="/images/pcb-logos/pcb-xray.png"
                   className=" object-contain object-center rounded-[10px]"
                   fill={true}
-                  style={{ objectFit: 'cover' }}
+                  style={{ objectFit: "cover" }}
                   alt="product image"
                 />
               </div>
               <div className="image-box h-[287px] relative">
                 <Image
-                  src="/images/pcb-logos/pcb-xray.svg"
+                  src="/images/pcb-logos/pcb-xray.png"
                   className=" object-contain object-center rounded-[10px]"
                   fill={true}
-                  style={{ objectFit: 'cover' }}
+                  style={{ objectFit: "cover" }}
                   alt="product image"
                 />
               </div>

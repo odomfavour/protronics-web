@@ -1,14 +1,14 @@
-'use client';
-import React, { useState, useEffect, useRef } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import { navLinks } from '@/app/utils/data';
-import { usePathname } from 'next/navigation';
-import { FaChevronDown } from 'react-icons/fa';
-import { FaX } from 'react-icons/fa6';
-import { GiHamburgerMenu } from 'react-icons/gi';
-import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
-import { FaXTwitter } from 'react-icons/fa6';
+"use client";
+import React, { useState, useEffect, useRef } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { navLinks } from "@/app/utils/data";
+import { usePathname } from "next/navigation";
+import { FaChevronDown } from "react-icons/fa";
+import { FaX } from "react-icons/fa6";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Header = () => {
   const pathname = usePathname();
@@ -27,10 +27,10 @@ const Header = () => {
     };
 
     handleResize(); // Check initial screen size
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -70,9 +70,9 @@ const Header = () => {
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
@@ -122,7 +122,7 @@ const Header = () => {
                     </a>
                   </div>
                 </div>
-                <div className="lg:ml-auto">
+                <div className="lg:ml-auto hidden lg:block">
                   <ul className="flex gap-6">
                     <li>
                       <Link
@@ -195,8 +195,8 @@ const Header = () => {
                             className={`text-base text-[#101928] font-normal  flex items-center ${
                               pathname === itemLink.url ||
                               activeParent === itemLink.id
-                                ? 'font-semibold'
-                                : 'font-normal'
+                                ? "font-semibold"
+                                : "font-normal"
                             }`}
                             onClick={() => handleDropdown(itemLink.id)}
                           >
@@ -205,8 +205,8 @@ const Header = () => {
                               <span
                                 className={`ml-2 transform transition-transform ${
                                   openDropdown === itemLink.id
-                                    ? 'rotate-180'
-                                    : 'rotate-0'
+                                    ? "rotate-180"
+                                    : "rotate-0"
                                 }`}
                               >
                                 <FaChevronDown />
@@ -231,7 +231,7 @@ const Header = () => {
                                   onClick={closeDropdown}
                                 >
                                   <div className="flex items-center gap-3">
-                                    <div className="h-[8px] w-[8px] rounded-full bg-[#98A2B3]" />{' '}
+                                    <div className="h-[8px] w-[8px] rounded-full bg-[#98A2B3]" />{" "}
                                     {subLink.name}
                                   </div>
                                 </Link>
@@ -302,8 +302,8 @@ const Header = () => {
                       className={`text-base text-[#101928] font-normal pb-2 flex items-center ${
                         pathname === itemLink.url ||
                         activeParent === itemLink.id
-                          ? 'font-semibold'
-                          : 'font-normal'
+                          ? "font-semibold"
+                          : "font-normal"
                       }`}
                       onClick={() => handleDropdown(itemLink.id)}
                     >
@@ -312,8 +312,8 @@ const Header = () => {
                         <span
                           className={`ml-2 transform transition-transform ${
                             openDropdown === itemLink.id
-                              ? 'rotate-180'
-                              : 'rotate-0'
+                              ? "rotate-180"
+                              : "rotate-0"
                           }`}
                         >
                           <FaChevronDown />
@@ -339,7 +339,7 @@ const Header = () => {
                             onClick={closeMobileMenu}
                           >
                             <div className="flex items-center gap-3">
-                              <div className="h-[8px] w-[8px] rounded-full bg-[#98A2B3]" />{' '}
+                              <div className="h-[8px] w-[8px] rounded-full bg-[#98A2B3]" />{" "}
                               {subLink.name}
                             </div>
                           </Link>
