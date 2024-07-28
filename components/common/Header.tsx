@@ -122,7 +122,7 @@ const Header = () => {
                     </a>
                   </div>
                 </div>
-                <div className="lg:ml-auto">
+                <div className="lg:ml-auto hidden lg:block">
                   <ul className="flex gap-6">
                     <li>
                       <Link

@@ -1,27 +1,27 @@
-import Image from 'next/image';
-import React from 'react';
+import Image from "next/image";
+import React from "react";
 
 const WhySection = () => {
   const qualities = [
     {
       id: 1,
-      title: 'Quality Assured',
-      desc: 'Experience flawless performance with our meticulous PCB Assembly process.',
+      title: "Quality Assured",
+      desc: "Experience flawless performance with our meticulous PCB Assembly process.",
     },
     {
       id: 2,
-      title: 'Advanced Technology',
-      desc: 'We leverage cutting-edge solutions to deliver state-of-the-art circuit boards.',
+      title: "Advanced Technology",
+      desc: "We leverage cutting-edge solutions to deliver state-of-the-art circuit boards.",
     },
     {
       id: 3,
-      title: 'Cost-effective Solution',
-      desc: 'Optimize your budget with our competitive pricing and high-yield assembly.',
+      title: "Cost-effective Solution",
+      desc: "Optimize your budget with our competitive pricing and high-yield assembly.",
     },
     {
       id: 4,
-      title: 'Quick Turnaround',
-      desc: 'Get your PCBs faster with our streamlined production process.',
+      title: "Quick Turnaround",
+      desc: "Get your PCBs faster with our streamlined production process.",
     },
   ];
   return (
@@ -43,10 +43,10 @@ const WhySection = () => {
               <div className="lg:w-3/5 w-full">
                 <div className="lg:h-[450px] h-[200px] w-full relative">
                   <Image
-                    src="/images/why-pic.svg"
+                    src="/images/why-pic.png"
                     className=" object-contain object-center rounded-2xl"
                     fill={true}
-                    style={{ objectFit: 'contain' }}
+                    style={{ objectFit: "contain" }}
                     alt="product image"
                   />
                 </div>
@@ -59,7 +59,7 @@ const WhySection = () => {
                         src="/images/3d.svg"
                         className=" object-contain object-center rounded-2xl"
                         fill={true}
-                        style={{ objectFit: 'contain' }}
+                        style={{ objectFit: "contain" }}
                         alt="product image"
                       />
                     </div>
