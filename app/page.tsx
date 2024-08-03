@@ -1,5 +1,6 @@
 import Footer from "@/components/common/Footer";
 import Header from "@/components/common/Header";
+import Established from "@/components/landing/Established";
 import GetStarted from "@/components/landing/GetStarted";
 import HeroSection from "@/components/landing/HeroSection";
 import Partners from "@/components/landing/Partners";
@@ -15,6 +16,7 @@ export default function Home() {
     <main>
       <Header />
       <HeroSection />
+      <Established />
       <Partners />
       <WhySection />
       <ServicesSection />
