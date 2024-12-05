@@ -1,24 +1,24 @@
-import HeaderBar from '@/components/common/HeaderBar';
-import { Metadata } from 'next';
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
+import HeaderBar from "@/components/common/HeaderBar";
+import { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
 export const metadata: Metadata = {
-  title: 'Blog - Protronics-inc',
+  title: "Blog - Protronics-inc",
   description:
-    'The quick turn EMS, PCB Design, PCB assembly and IC packaging specialist',
-}
+    "The quick turn EMS, PCB Design, PCB assembly and IC packaging specialist",
+};
 
 const page = () => {
   const blogs = [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }];
   const categories = [
-    'PCB Prototype',
-    'Layering Techniques',
-    'Manufacturing',
-    'RFQ Process ',
-    'Maintenance Policy',
-    'Control and Quality',
+    "PCB Prototype",
+    "Layering Techniques",
+    "Manufacturing",
+    "RFQ Process ",
+    "Maintenance Policy",
+    "Control and Quality",
   ];
   return (
     <section className="pt-[200px]">
@@ -38,10 +38,10 @@ const page = () => {
                         <div>
                           <div className="image-box h-[240px] relative z-10">
                             <Image
-                              src="/images/pcb-logos/pcb-xray.svg"
+                              src="/images/pcb-logos/pcb-xray.png"
                               className=" object-contain object-center rounded-[10px]"
                               fill={true}
-                              style={{ objectFit: 'cover' }}
+                              style={{ objectFit: "cover" }}
                               alt="product image"
                             />
                           </div>
@@ -66,9 +66,9 @@ const page = () => {
               </div>
               <div className="lg:w-1/4 w-full  relative">
                 <div className="sticky top-[160px]">
-                  <div className="bg-[#FFECE5] rounded-[10px] p-[26px] mb-14">
+                  <div className="bg-[#F9FAFB] rounded-[10px] p-[26px] mb-14">
                     <p className="text-base font-normal text-proDark text-center mb-4">
-                      Get beyond blog delivered to your inbox every week.{' '}
+                      Get beyond blog delivered to your inbox every week.{" "}
                     </p>
                     <div className="flex justify-center items-center">
                       <button className="bg-proOrange rounded px-[24px] py-[10px] font-semibold text-base text-white">

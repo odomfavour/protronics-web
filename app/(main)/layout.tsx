@@ -1,5 +1,7 @@
-import { ReactNode } from 'react';
-import PageWrapper from './PageWrapper';
+import { ReactNode } from "react";
+import PageWrapper from "./PageWrapper";
+import Header from "@/components/common/Header";
+import Footer from "@/components/common/Footer";
 
 interface RootLayoutProps {
   children: ReactNode;

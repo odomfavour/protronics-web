@@ -1,41 +1,41 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
-import { FaAngleRight } from 'react-icons/fa';
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import { FaAngleRight } from "react-icons/fa";
 
 const ServicesSection = () => {
   const services = [
     {
       id: 1,
-      title: 'PCB Design',
-      desc: 'Bring your vision to life and leverage our design expertise to optimize for PCBs for functionality.',
-      url: '/pcb-design',
-      img: '/images/service-Img1.svg',
-      serviceIcon: '/images/service-1.svg',
+      title: "PCB Design",
+      desc: "Bring your vision to life and leverage our design expertise to optimize for PCBs for functionality.",
+      url: "/pcb-design",
+      img: "/images/service-Img1.svg",
+      serviceIcon: "/images/service-1.svg",
     },
     {
       id: 2,
-      title: 'PCB Assembly',
-      desc: 'Seamlessly transform your designs into high-quality, reliable circuit boards.',
-      url: '/pcb-assembly',
-      img: '/images/service-Img2.svg',
-      serviceIcon: '/images/service-2.svg',
+      title: "PCB Assembly",
+      desc: "Seamlessly transform your designs into high-quality, reliable circuit boards.",
+      url: "/pcb-assembly",
+      img: "/images/service-Img2.svg",
+      serviceIcon: "/images/service-2.svg",
     },
     {
       id: 3,
-      title: 'Testing',
-      desc: 'Breathe new life into your PCBs with our expert rework and repair services.',
-      url: '/testing',
-      img: '/images/service-Img3.svg',
-      serviceIcon: '/images/service-3.svg',
+      title: "Testing",
+      desc: "Breathe new life into your PCBs with our expert rework and repair services.",
+      url: "/testing",
+      img: "/images/service-Img3.png",
+      serviceIcon: "/images/service-3.svg",
     },
     {
       id: 4,
-      title: 'IC Packaging',
-      desc: 'Fast-track your product development with raqpid prototyping and iterative design cycles.',
-      url: '/ic-packaging',
-      img: '/images/service-Img4.svg',
-      serviceIcon: '/images/service-4.svg',
+      title: "IC Packaging",
+      desc: "Fast-track your product development with raqpid prototyping and iterative design cycles.",
+      url: "/ic-packaging",
+      img: "/images/service-Img4.png",
+      serviceIcon: "/images/service-4.svg",
     },
   ];
   return (
@@ -59,7 +59,7 @@ const ServicesSection = () => {
                         src={img}
                         className=" object-contain object-center rounded-2xl "
                         fill={true}
-                        style={{ objectFit: 'cover' }}
+                        style={{ objectFit: "cover" }}
                         alt="product image"
                       />
                     </div>
@@ -70,7 +70,7 @@ const ServicesSection = () => {
                         src={serviceIcon}
                         className=" object-contain object-center rounded-2xl "
                         fill={true}
-                        style={{ objectFit: 'cover' }}
+                        style={{ objectFit: "cover" }}
                         alt="product image"
                       />
                     </div>

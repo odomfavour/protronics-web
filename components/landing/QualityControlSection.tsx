@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import React from 'react';
+import Image from "next/image";
+import React from "react";
 
 const QualityControlSection = () => {
   return (
@@ -23,10 +23,10 @@ const QualityControlSection = () => {
                   <div>
                     <div className="image-box h-[240px] relative z-10">
                       <Image
-                        src="/images/pcb-logos/pcb-xray.svg"
+                        src="/images/pcb-logos/pcb-xray.png"
                         className=" object-contain object-center rounded-t-2xl "
                         fill={true}
-                        style={{ objectFit: 'cover' }}
+                        style={{ objectFit: "cover" }}
                         alt="product image"
                       />
                     </div>
@@ -47,10 +47,10 @@ const QualityControlSection = () => {
                   <div>
                     <div className="image-box h-[240px] relative z-10">
                       <Image
-                        src="/images/pcb-logos/env-testing.svg"
+                        src="/images/pcb-logos/env-testing.png"
                         className=" object-contain object-center rounded-t-2xl"
                         fill={true}
-                        style={{ objectFit: 'cover' }}
+                        style={{ objectFit: "cover" }}
                         alt="product image"
                       />
                     </div>

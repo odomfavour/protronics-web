@@ -1,47 +1,47 @@
-'use client';
-import Image from 'next/image';
-import React from 'react';
-import { FaAngleRight } from 'react-icons/fa';
+"use client";
+import Image from "next/image";
+import React from "react";
+import { FaAngleRight } from "react-icons/fa";
 import {
   Navigation,
   Pagination,
   Scrollbar,
   A11y,
   Autoplay,
-} from 'swiper/modules';
+} from "swiper/modules";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
-import 'swiper/css/autoplay';
-import Link from 'next/link';
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import "swiper/css/autoplay";
+import Link from "next/link";
 
 const HeroSection = () => {
   const heroSlides = [
     {
-      title: 'Experience Seamless PCB Solutions',
-      subtitle: 'We offer precision craftsmanship everytime.',
-      image: '/images/svg/hero-img.svg',
-      quoteText: 'Get a quote',
-      learnMoreText: 'Learn More',
+      title: "Experience Seamless PCB Solutions",
+      subtitle: "We offer precision craftsmanship everytime.",
+      image: "/images/hero-pic-1.webp",
+      quoteText: "Get a quote",
+      learnMoreText: "Learn More",
     },
     {
-      title: 'Innovate Faster with Bespoke PCB Prototypes',
-      subtitle: 'Explore custom PCB Prototypes tailored to your needs.',
-      image: '/images/header-1.svg',
-      quoteText: 'Get a quote',
-      learnMoreText: 'Learn More',
+      title: "Innovate Faster with Bespoke PCB Prototypes",
+      subtitle: "Explore custom PCB Prototypes tailored to your needs.",
+      image: "/images/hero-pic-2.webp",
+      quoteText: "Get a quote",
+      learnMoreText: "Learn More",
     },
     {
-      title: 'Expert PCB Rework & Repair Services Await',
-      subtitle: 'Restore Performance. Renew Confidence.',
-      image: '/images/header-2.svg',
-      quoteText: 'Get a quote',
-      learnMoreText: 'Learn More',
+      title: "Expert PCB Rework & Repair Services Await",
+      subtitle: "Restore Performance. Renew Confidence.",
+      image: "/images/hero-pic-3.webp",
+      quoteText: "Get a quote",
+      learnMoreText: "Learn More",
     },
     // Add more slides as needed
   ];
@@ -64,7 +64,7 @@ const HeroSection = () => {
                     {slide.title}
                   </h1>
                   <h2 className="lg:mt-[24px] mt-4 text-[#1D2739] lg:text-xl text-md">
-                    {' '}
+                    {" "}
                     {slide.subtitle}
                   </h2>
                   <div className="flex items-center lg:gap-[24px] gap-4 mt-[20px]">
@@ -82,7 +82,7 @@ const HeroSection = () => {
                       src={slide.image}
                       className=" object-contain object-center rounded-2xl"
                       fill={true}
-                      style={{ objectFit: 'contain' }}
+                      style={{ objectFit: "contain" }}
                       alt="product image"
                     />
                   </div>
